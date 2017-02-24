@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Publixcess/Isil Egrikavuk</title>
+	<meta name="description" content="Interview with Isil Egrikavuk, October 2016">
+	<meta name="keywords" content="HTML,CSS,Jquery,Art,Turkey,ContemporaryArt,StandingMan,Gezi Protests, AKP, Artists">
+	<meta name="Author" content="Lal Avgen">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+
+</head>
+
+ <link rel="stylesheet" href="font/bebas-stylesheet.css" onload="sheetLoaded()" onerror="sheetError()">
+ <link rel="stylesheet" href="font/stylesheet.css" onload="sheetLoaded()" onerror="sheetError()">
+ <link rel="stylesheet" href="font/stylesheet2.css" onload="sheetLoaded()" onerror="sheetError()">
+<!-- colorpalette :
+#dbc3d0
+#5e0231
+#c7a693
+#856046 -->
+<style>
+sup{
+	color: white;
+}
+@font-face {
+  font-family: 'Lora Regular';
+  font-style: normal;
+  src: url(font/lora-regular-webfont.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lora Bold';
+  font-style: normal;
+  src: url(font/lora-bold-webfont.woff) format('woff');
+}
+html{
+	zoom:1;
+	margin-top: -15px;
+	margin-bottom: 15px;
+	background-color: #000000;
+}
+.datapoint{
+	cursor: pointer;
+	font-family: "ralewayextralight", sans-serif ;
+	color: 	white;
+	font-weight: bold;
+    font-size: 1.2em;
+	}
+p{
+display: none;
+color: black;
+opacity: 0.8;
+font-size: 16px;
+font-family: "Lora Regular";
+}
+
+
+.flex-grid-thirds {
+	list-style: none;
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	  -ms-flex-pack: justify;
+	      justify-content: space-between;
+  flex-flow: row wrap;
+  /* Then we define how is distributed the remaining space */
+	align-items: flex-end;
+	align-content: flex-start;
+ 	
+}
+
+
+@media (max-width: 400px) {
+	html{
+	background-color: white;
+	font-size: 10px;
+	}
+
+table{display:none;}
+    .flex-grid-thirds {
+    display: block;
+    }
+    .flex-grid-thirds .col {
+    width: 100%;
+    margin: 0 0 10px 0;
+    }
+    .datapoint{
+	font-family: "ralewayextralight", sans-serif ;
+	color: 	black;
+	font-weight: bold;
+   
+	}
+	.col{
+		margin-right: 7px;
+	}
+}
+* {
+  box-sizing: border-box;
+}
+
+.flex-grid {
+ /* margin: 0 0 60px 0;*/
+}
+.col {
+/*	z-index: 2;*/
+	width: 28%;
+	margin: auto;
+	position: relative;
+  	padding: 19px;
+  	float: right;
+	margin-right: auto;
+	margin-top: 1.3em;
+	margin-left: 1em;
+	margin-bottom: 1.8em;
+	height: auto;
+	/*background-color: #af7269;*/
+	box-shadow: 1px 3px 3px 6px #ca9bc4;
+	/*line-height: 1.4em;*/
+}
+body{
+	background-color: #000000;
+	padding: 0px;
+	margin: 0px;
+ }
+
+#splashscreen {
+	font-family: 'benthamregular';
+    position:absolute;
+    z-index: 9999;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    width:100%;
+    height: 500%;
+    background-color:white;
+    opacity: 1;
+    font-size: 27px;
+     overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/*
+.dragme{
+			position:relative;
+			width: 270px;
+			height: 203px;
+			cursor: move;
+			z-index:9999999;
+		}*/
+
+#image {   width: 300px; height: auto; padding: 0.5em; cursor: move; display: none; z-index: 10000;  }
+img{
+	position: inline;
+	z-index: 9999999;
+	/*margin-right: -500px;
+	margin-bottom: 300px;*/
+}
+
+.sources{
+	display: inline-block;
+}
+
+.animatable{
+/*	background-color: white;*/
+	background-color: rgba(173,216,230,.5);
+	margin-bottom: 32%;
+	-webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 12s; /* Chrome, Safari, Opera */
+    animation-name: shadowanim;
+     animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease;
+}
+@-webkit-keyframes shadowanim {
+    0%   {box-shadow: 4px 1px 4px 6px #fab2ff;}
+    25%  {box-shadow: 4px 1px 4px 6px 	#b2fffa;}
+    45% {box-shadow: 4px 1px 4px 6px #6A997F}	
+    50%  {box-shadow: 4px 1px 4px 6px 	#ffb2b7;}
+    100% {box-shadow: 4px 1px 4px 6px #fab2ff;}
+}
+
+ Standard syntax 
+@keyframes shadowanim {
+  0%   {box-shadow: 4px 1px 4px 6px #fab2ff;}
+    25%  {box-shadow: 4px 1px 4px 6px #b2fffa;}	
+    45% {box-shadow: 4px 1px 4px 6px #6A997F}
+    50%  {box-shadow: 4px 1px 4px 6px #ffb2b7;}
+    100% {box-shadow: 4px 1px 4px 6px #fab2ff;}
+}
+/*//for the alarm box*/
+.ui-widget.success-dialog {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: .9em;
+}
+
+.ui-widget-content.success-dialog {
+    background: #F9F9F9;
+    border: 1px solid #90d93f;
+    color: #222222;
+}
+.ui-dialog.success-dialog .ui-dialog-content {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    overflow: auto;
+    position: relative;
+    padding: 0 !important;
+    margin: 0;
+}
+
+.ui-dialog.success-dialog .ui-widget-header {
+    background: #D3D3D3;
+    border: .4mm;
+    
+    font-weight: normal;
+}
+
+.ui-dialog.success-dialog .ui-dialog-titlebar {
+    padding: 0.1em .5em;
+    position: relative;
+    font-size: 1em;
+}
+a{
+	color: #000bdb;
+	font-style: italic;
+}
+a.imgopener{
+	color: #fffa99;
+}
+
+.ui-icon  {
+    width: 15px !important;
+    height: 15px !important;
+    background-color: green !important;
+    right: 22px !important;
+    bottom: 25px !important;
+}
+    
+table , td {
+    border: .3px solid black;
+    background-color: #93C1D1;
+	font-family: "ralewaymedium";
+	font-style: italic;
+	font-size: 18px;
+	background-color: rgba(173,216,230,.5);
+/*	-webkit-animation-name: example;
+	-webkit-animation-duration: 12s;
+	animation-name: shadowanim;
+	animation-duration: 12s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;*/
+}
+th{
+	color: white;
+	text-align: left;
+	text-decoration: none;
+	font-size: 1em;
+}
+
+td{opacity: 1;}
+
+table{
+	
+	position: relative;
+	left: 50%;
+  	top: 500px;
+  	transform: translate(-50%, -50%);
+  	margin-bottom: 70%;
+
+
+}
+
+/**
+ * Initialiazing a `footnotes` counter on the wrapper
+ */
+article {
+  counter-reset: footnotes;
+}
+/**
+ * Inline footnotes references
+ * 1. Increment the counter at each new reference
+ * 2. Reset link styles to make it appear like regular text
+ */
+[aria-describedby="footnote-label"] {
+  counter-increment: footnotes; /* 1 */
+  cursor: default; /* 2 */
+  outline: none; /* 2 */
+  color: inherit;
+}
+
+/**
+ * Actual numbered references
+ * 1. Display the current state of the counter (e.g. `[1]`)
+ * 2. Align text as superscript
+ * 3. Make the number smaller (since it's superscript)
+ * 4. Slightly offset the number from the text
+ * 5. Reset link styles on the number to show it's usable
+ */
+[aria-describedby="footnote-label"]::after {
+  content: '[' counter(footnotes) ']'; /* 1 */
+  vertical-align: super; /* 2 */
+  font-size: 0.5em; /* 3 */
+  margin-left: 2px; /* 4 */
+  color: blue; /* 5 */
+  text-decoration: underline; /* 5 */
+  cursor: pointer; /* 5 */
+}
+
+/**
+ * Resetting the default focused styles on the number
+ */
+[aria-describedby="footnote-label"]:focus::after {
+  outline: thin dotted;
+  outline-offset: 2px;
+}
+
+[aria-label="Back to content"] {
+  font-size: 1em;
+}
+
+/**
+ * Highlight target note
+ */
+footer :target {
+  background: white;
+}
+#media{
+	display: none;
+}
+
+#bayrak{
+	position: fixed;
+	display: none;
+	width: 600%;
+	height: 400%;
+	z-index: 10000;
+	top: 0px;
+	left: -500px;
+	background: url(images/blackflag.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;}
+
+#kirmizi{
+	position: fixed;
+	display: none;
+	width: 600%;
+	height: 400%;
+	z-index: 10000;
+	top: 0px;
+	left: -500px;
+	background: url(images/kirmizielbise.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;}
+
+#gezi{
+	position: fixed;
+	display: none;
+	width: 600%;
+	height: 400%;
+	z-index: 10000;
+	top: 0px;
+	left: -500px;
+	background: url(images/geziparksmall.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;}
+@media (max-width: 730px) {
+ html{
+ 	background-color: black;
+ }
+ #media{
+ 	display: visible;
+ 	color: white;
+ 	font-size: 2em;
+ }
+ .flex-grid-thirds{
+ 	display: none;
+ }
+
+}
+</style>
+
+<body>
+<article>
+	
+	<div id="media">THIS INTERVIEW IS NOT OPTIMIZED FOR SMALL SCREENS<BR>PLEASE EXPERIENCE WITH A COMPUTER</div>
+
+	<div id="splashscreen">
+		<img src="images/isil.jpg" style="position: absolute; display:block; width:25%; margin-top:7em; left:5%; " alt="IsilEgrikavuk_Picture">
+
+    	<div  STYLE="position: absolute; top: 9%; left: 37%; display:inline-block; COLOR: black; text-decoration: none;"href="#"> IN CONVERSATION WITH IŞIL EĞRİKAVUK<br>
+    	<span style="font-size:16px;">Once you <a href="#" class="enter_link" >enter the interview</a>, click on the questions <br>
+    	you are interested in to see the answers.</span>
+    	<div style="font-size:14px; text-align: right; margin-right: 6px;"> 
+    	 by Lal Avgen, 2016</div>
+    	</div>	
+    	
+		<div STYLE="left: 0%; width: 95%;  font-size: 18px; margin: 5px 6px 10px; margin-right: 30%; border-right-width: .5px; border-right-style: solid; word-wrap: break-word;" >
+    	On July 15th 2016 Lal Avgen sat down with Işıl Eğrikavuk to talk about the differences and similarities their practices shared as Turkish female artists living between Chicago and Istanbul. Although from different generations, they found they had a great deal in common as Turkish women artists while discussing the impact of politics, self invention and representation in their work. This is one of the first conversations towards publicexcess' first online publication 'Diaspora<>Diaspora'. This exchange was shared <i> on the morning of the 15th of July (Taksim,Istanbul), the day of the attempted coup d'etat in Turkey</i> </div>	
+
+    	
+	</div>
+	
+	<div id="gradient">
+	<!-- 	//question mark for entering the info fiv -->
+		<!-- <a style="top:10%; left:.5%; position:fixed;" href="#an"> -->
+		 <img style="top:10%; left:.5%; position:fixed; width: 32px; display:none; " id="qmark" src="images/i.png" alt="question"></a>
+		<div style="display:none; padding:10px; font-size:14px;" id="dialog">Yellow links open up images, blue links take you to bibliography.<br><br><B> To drag images around </b>click,hold and drag them<b><br> Resize images </b> with dragging green square on right bottom corner of images </div>
+
+<table style=" ">
+	<div style= "box-shadow: 4px 1px 2px 6px #fab2ff; position: absolute; top: 62%; left: 23%; font-size: 1.2em; width: 53%; background-color: white; opacity: 0.8; padding-top: 5px; padding-bottom: 5px; padding-right: 5px; padding-left: 5px; border-top-width: 1px; border-top-style: solid white; border-right-width: 1px; border-right-style: solid white; border-left-width: 1px;border-left-style: solid white;"> Yellow links open up images, blue links take you to bibliography at the end of the page.<br><br><b> To drag images around</b> click,hold and drag them<b><br> To resize images </b> drag the green square on right bottom corner of images.  <div style="position: absolute; top: 140%; left: 39%;font-size: 1em;"><i>Scroll Down</i> </div> </div>
+ 
+
+
+</table>
+
+<ul class="flex-grid-thirds">
+<!-- 	<div style="width:1500px; position:relative;">
+			<div id="an" class="animatable" style="color:white; display:block; left: 26%; width: 50%; font-size= 22px; position:inherit; box-shadow: 4px 1px 4px 6px #fab2ff; margin-top:27%;  font-family: 'ralewaymedium'; font-style: italic; font-size:18px;"  class="col"> 
+				<span style="color:black;">Yellow links open up images, blue links open up external pages<br><br> if there are images opening with click, doubleclik on that image link also will take you to an external info page </span>
+				<br><br>
+				Drag images around with <b> 
+				<span style="color:black;">clicking on them</span>
+				<br></b>zoom in and out on images with <b>
+				<span style="color:black;"> clicking on (green square) right-bottom corner of image</span>
+				</b> <br>SCROLL DOWN FOR INTERVIEW 
+			</div>
+	</div>	 -->
+
+
+	<div class="col" id="#gradient">
+<img id="imagebl"  style="display:none; z-index: 1003000; left: -134%;position: absolute;top: 0px;" src="images/blackflag.jpg"/></span>
+		<div  class="datapoint" data-popout="1">
+				<span style="color:#add8e6; font-family: 'ralewaybold';">Let's Get To Know Işıl, Her Background </span> <br><br>
+				After studying at Bogazici University in Istanbul, you completed your Master of Fine Arts at School of the Art Institute in Performance art. And now you’ve returned to Istanbul. Why did you decide to study in America?
+			</div> 
+
+			<p class="popout popout-1">
+				Actually I have an interesting story because my education roots actually lie in Literature. I studied Western Literature at Bogazici University.<br>
+				<br>
+				While I was studying there, I took an Arts Administration class. That was my entry point to visual arts. Then I applied for a Masters Degree in Arts Administration at the School of Art Institute of Chicago. During my masters there I started taking my elective classes in performance department and I loved it more than anything. At the end, I was auditing so many performance classes and that a lot of people thought I was in the performance department! When I finished my master’s degree in Arts Administration, I applied to the Performance Department and completed my second masters degree. The 4 years were very beneficial for me. From that on, I built my practice combining literature, fiction and performance. Though literature and fiction were always at forefront for me.<br><br>
+				When I came back to Istanbul from Chicago I found a job as a reporter in Hurriyet Daily News as well as teaching part time at university. What frustrated me was the language of articles in newspapers describing art. They were mostly written in a closed language inside certain frameworks or simply repeated press releases. Then in 2013, I started my own column at a national newspaper called High on Contemporary Art. It looked like a Question and Answer but I actually wrote the questions as well!
+				I also try to break that closed up framework with my art work. For example, we built my most known project 
+
+				<a  onclick="return false" target="blank" class="imgopener" data-pop="1"  href="http://isilegrikavuk.net/services-view/change-will-be-terrific/" >Change Will Be Terrific</a> 
+				<span  class="draggableHelper draggableHelper-1" >
+    				<img  class="pop pop-1" style=" margin-left: 0px; display: none !important;" id="image" src="images/changewillbe2.jpg"/>
+				</span>
+ 				in 2012 with Jozef E. Amado as a talk show because that’s a format most people can relate to. 
+				At 2013 my art practices were tugging on me more than  anything so I quit my newspaper position and focused on my art practice and teaching. I am still making work, showing internationally and teaching video and performance art.
+			</p>
+	</div>
+	
+	<div class="col"  >
+		<div  class="datapoint" data-popout="2">
+			<span style="color:#add8e6; font-family: 'ralewaybold';"> Conversation About Art World in Turkey </span> <br><br>
+			Your work varies from performance to moving image or installation. Being an interdisciplinary artist dealing with various topics concerning social political issues, what do you think about concerns of the art world now when there is a lot of violence and injustice happening all around the globe? 
+		</div> 
+
+		<p class="popout popout-2">
+			This question covers a large scope; I think the answer depends on where you are in the world.<br><BR>
+			**Lets specify it for art world in Turkey. For a long time, we have been going through lot of problems as a nation. For example, the oppressive regime we have been under for the last decade or the women inequality or lack of freedom of speech.  Do you think those problems are stressed enough in art world here?
+		</p>
+
+		<p class="popout popout-2"> 
+			Yes and no. Something interesting happens here in Istanbul. Especially in Turkey most of the artist’s subject matter deal with social political topics. It almost becomes a must because that is the reality you live in. The daily life subjects are so heavy here you can’t escape from it in your work. Most artists touch on that one way or other. As I said, it is almost impossible to escape that but what is lacking is the discussion that carries on after a work is presented. The conversation generally happens within a small circle; it doesn’t get echoed to the public which means it doesn’t open up discussion with the people that experience these issues daily. Though this has changed a little bit after
+
+			<a  href="#footnotes" id="fotnotes1" aria-describedby="footnote-label">Gezi protests </a> 
+			especially with 
+			
+			<a onclick="return false" class="imgopener" data-pop="2" target="blank" href="https://reclaimistanbul.files.wordpress.com/2014/01/5.jpg">rainbow stairs </a>
+			<span  class="draggableHelper draggableHelper-2" >
+    			<img  class="pop pop-2" style="display: none !important;" id="image" src="images/rainbowstairs.jpg"/>
+			</span>
+
+			or the <a onclick="return false" class="imgopener" data-pop="3" target="blank" href="http://www.bbc.com/news/world-europe-22962526">Standing Man</a>
+			<span  class="draggableHelper draggableHelper-3" >
+    			<img  class="pop pop-3" style="display: none !important; " id="image" src="images/standingman.jpg"/>
+			</span>
+
+			. <br><br>&nbsp;Although these were very visible and important acts of protests, what I think is more important is the post-Gezi period. Because after that period community art practices have started to evolve and become more inclusive. They now involve regular citizens and there has been an increase in projects that support collaborative practices such as green spaces, gardens, or architectural projects. 
+			However, we will see its sustainability, so the answer becomes yes and no.
+		</p>
+	</div>
+
+	<div id="scroll-to" class="col"  >
+		<div class="datapoint" data-popout="3" id="errorpop1">
+			<span style="color:#add8e6; font-family: 'ralewaybold';" > Protest or Art Work?</span><br><br>
+			<a onclick="return false" class="imgopener" data-pop="14" target="blank" href="http://www.bbc.com/news/world-europe-22962526">Standing Man</a>. Do you think people understood that this was an artful protest? Is there a vast divide between art and the people?
+		</div>
+		<span  class="draggableHelper draggableHelper-14" >
+    			<img  class="pop pop-14" style="display: none !important; " id="image" src="images/standingman.jpg"/>
+		</span>
+		
+		<p class="popout popout-3" id="errordisp">
+			I don’t think of the 
+			<a href="#footnotes1" id="fotnotes2" aria-describedby="footnote-label">Standing Man</a> 
+			as an art project. That was a public protest that had a performative aspect to it. But Standing man
+			is a nice example of how the form of protests are evolving. Protests nowadays –as compared to 60’s or 70’s– incorporate performative gestures into the protest. In case of standing man, the performative gesture is used as a protest. That’s why I think even if people don’t consider it art they can still relate to it. It created participation. No matter how you categorize it, it is important for artists/people to create these kind of bold actions. In addition, it is important to keep in mind that this action evolved from a reaction [to the political situation] rather than the performance of an artwork.
+			<br><br>&nbsp;
+			Back to your question, is there a division between art and people? In order to answer that, we need to go way back, maybe to the foundation of Republic of Turkey. There wasn’t a deeply rooted history of fine arts in Turkey back then. The <a href="#footnotes2"id="fotnotes3" aria-describedby="footnote-label" >first art institute</a> was established at the end of 1800’s through the modernization attempts of Ottoman Republic, especially in the army. You are creating an art institute in a place where there isn’t an embedded concept of [Western] fine art. As a result, most of ideas were imported from west. <br><br>&nbsp;
+			That’s the biggest clash in Turkey. How do these come together, if they come together at all? Therefore, there isn’t an understanding of art at an average public level because it doesn’t come from within, it has no place in religious history and it is not taught in schools. So it becomes hard for these concepts to go deeper and connect with our roots. Protest on the other hand comes alive with a reactionary action and it can formulate a more organic voice.
+		</p>
+		
+	</div>
+<div id="kirmizi"></div>
+
+	<div   class="col" >
+		<div class="datapoint" data-popout="4" >
+			<span style="color:#add8e6; font-family: 'ralewaybold';"> What Does Religion Have To Do With it? </span> <br><br>
+			In your opinion, how has Turkey being predominantly an Islamic population impacted contemporary art? Do you think this makes it harder for people to accept the “Art World”? Is there a clash between Islam and Art here?
+		</div> 
+
+		<p class="popout popout-4">
+			Especially for the last years during the 14-year long
+			<a onclick="return false" class="imgopener" data-pop='4'target="blank" href="https://en.wikipedia.org/wiki/Justice_and_Development_Party_(Turkey)">AKP</a> 
+			<span  class="draggableHelper draggableHelper-4" >
+    			<img  class="pop pop-4" style="display: none !important; " id="image" src="images/akp_logo.jpg"/>
+			</span>
+
+			regime a definition, called conservative art has come up. The AKP, the ruling party of Turkey is criticized to be  very weak in not producing original policies in culture and arts. This term “Conservative art” seems to have developed from government’s desire to intervene in the arts. Its manifesto says what it doesn’t want to be, yet what it is, is not clear either. It mostly seems like an overall combination of western art forms like painting and more eastern forms like Islamic calligraphy. <br><br>&nbsp;On the other hand all these definitions are another tool for the growth of the market as the new market is looking for these kind of art forms right now. The new conservative bourgeois here wants to buy this kind of artwork, a market which has been developing for the last decade.Yet, I think that even the Islamic touch seems to be quite artificial.
+		</p>
+	</div>	
+
+
+	<div class="col" >
+		<div class="datapoint" data-popout="5">
+			<span style="color:#add8e6; font-family: 'ralewaybold';"> What About Government Support on Opposite Ideas to their Ideology? </span> <br><br>
+			Does Turkish government sanction the artists that support their cause versus those who oppose?
+		</div> 
+		<p class="popout popout-5">
+			
+			Both [laugh] - Actually the answer to this question is obvious. Whenever I go abroad I get the same question; does my work get censored or not. Yeah, I have been censored but I don’t solely want to put myself in a victim position. It is more about how and in what ways we deal with it as artists. I know that the situation for art isn’t at its best [in Turkey] but every country deals with its own problems. I was in Vienna the other week and the problem there is for example, gentrification. <b>Art is a battlefield everywhere.</b> <br><br>&nbsp;But to be specific, yes, there are problems here with censorship, and even self-censorship. In my work, I am thinking about how can we overcome this censorship, this ban. That is why I created the 
+			<a href="#footnotes3"id="fotnotes4" aria-describedby="footnote-label" >camouflage exhibition</a>
+			with my students.  It is about being camouflaged and thus yielding the ability to say something. I think [utilizing this tactic] is very worthy. Otherwise, if showing just the problems, you are creating a hierarchy with the western audience. I think it is important to handle these issues while being camouflaged, rather than screaming out your problems. That is where the potential lies for me and that is my strategy [with this exhibition and with my work].
+
+		</p>
+	</div>	
+
+	<div class="col" >
+		<div class="datapoint" data-popout="6" id="errorpop2">
+			<span style="color:#add8e6; font-family: 'ralewaybold';"> Turning Censorhip Around... HOW? </span> <br><br>
+			 <a onclick="return false" class="imgopener" data-pop="11" target="blank" href="http://isilegrikavuk.net/services-view/time-to-sing-a-new-song-yeni-bir-sarki-soylemek-lazim-2016/"> A Time To Sing a New Song</a> 
+			
+			was censored by municipality officers under the premise that it was
+
+			<a href="#footnotes4" id="fotnotes5" aria-describedby="footnote-label" id="footnotes-ref">“visual pollution”</a>.  
+
+			Do you think there is a way to use censorship as a medium? Your work has been censored, so were the curators of 4th Istanbul Biennale of Youth and Children, who left their positions because of
+			<a href="#footnotes5"id="fotnotes6" aria-describedby="footnote-label" id="footnotes-ref">censorship</a>. 
+			I wonder how can you turn this censorship around and use it for your benefit? 
+		</div>
+		<span class="draggableHelper draggableHelper-11">
+				<video class="pop pop-11" style="display: none;" width="400" controls>
+	  				<source src="images/havva-12sn-eng.mov" type="video/mov">
+	  				<source src="images/havva-12sn-eng.ogg" type="video/ogg">
+	  				Your browser does not support HTML5 video.
+				</video>
+		</span> 
+
+		<p class="popout popout-6">	
+			It is really hard to deal with censorship. You get mad, you get very angry, and you question if it  is necessary at all. The other problem is that it is really hard to compete with the government legally, your hands are tied... What I did in return was to answer them with a performance together with my students. I did a
+			<a onclick="return false" class="imgopener" data-pop="14" href="#">performance </a> 
+			<span class="draggableHelper draggableHelper-14" >
+    			<img  class="pop pop-14" style="display: none !important;" id="image" src="images/apple2.jpg"/>
+    		</span>where we hooked up the phone to speakers and I called the city municipality office in front of the audience. They have this very funny catchy song, an old school dance style.  We were slow dancing to that song and everyone was laughing. The aim was to create laughter as material. We were reflecting on the tragicomedy of my work being shut down. People can understand this as pollyannaism, but these topics are very heavy. <br><br>I think when art makes the real life situation even heavier it loses its effect. We live with that heaviness already; for example on my way here I was wondering whether a bomb would explode nearby or not. Therefore, when art reproduces that heaviness it depresses me, I don’t like that personally. I like to fight against censorship with laughter.
+			<br><br>
+			**You expressed yourself very clearly. I think laughing at a situation is a virtue.<br><br>
+			[Yes, I think of laughter as] approaching a given situation with another perspective and making someone else gain a different perspective on it. Even in my first projects such as
+			<a onclick="return false"  class="imgopener" data-pop='7' target="blank" href="http://isilegrikavuk.net/services-view/infamous-library/">Infamous Library</a>
+			<span class="draggableHelper draggableHelper-7" >
+    			<img  class="pop pop-7" style="display: none !important;" id="image" src="images/karanlik-kutuphane.jpg"/>
+    		</span>
+    		
+
+    		, I was interested in humor. Infamous library is even more absurd of a story.
+			There is also this issue with a lot of cliché around victim stories that are used as frameworks [by the West]. You are from a 3rd world country and it is expected that bombs might go off in your country, people might get abducted, bad things happen in your under-developed country. There is a category for these stories in the Western mindset and that is where you’re put into. Everything has a frame, how do you push that frame? That is what I am interested in. When you create something out of that frame so you can lure people [away from that].
+			
+			<br><br>
+			*That’s where the surprise factor comes in…
+			<br><br>
+			Yes. I use surprise in my work a lot. In 
+			<a href="#footnotes6" id="fotnotes7" aria-describedby="footnote-label" id="footnotes-ref"> Infamous Library</a>
+			the story begins with 12 people being taken to a library and forced to do research everyday. Usually the “abducted” people are taken to camps or other places. Or in my piece, 
+			<a href="#footnotes7" id="fotnotes8" aria-describedby="footnote-label" id="footnotes-ref"> Change Will Be Terrific</a>
+			I fictionalize that
+			<a onclick="return false"  class="imgopener" data-pop='5' href="#">Egyptian pyramids</a> 
+			<span  class="draggableHelper draggableHelper-5" >
+    			<img  class="pop pop-5" style="display: none !important;" id="image" src="images/ChangeWillBe.jpg"/>
+			</span>
+			are going to be built in Taksim square.  One might ask why pyramids? A citizen knowing the situation with the square might think “they were going to build military barracks there, so why would they build pyramids?” But if I lament the idea of building a military barrack, that would become something different. The idea of pyramids being built there would add absurdity. In my opinion if you push already existing frameworks, you give birth to something new and it attracts the audience.
+			<br><br>
+			Censorship is also a frame. An artist from Turkey or Iran might get censored. This is expected. And you can easily get pigeonholed that way. I don’t want that. When I give interviews abroad, I talk about this; yes, there is censorship but I focus on how I handle the censorship rather than that I got censored. I make fun of my work being censored. I give apples to the audience 
+			<a onclick="return false"  class="imgopener" data-pop='6' href="#">(video)</a>, 
+			<span  class="draggableHelper draggableHelper-6" >
+				<video class="pop pop-6" style="display: none !important; opacity:1; width:100%;"controls>
+  				<source src="images/havva2-dokumantasyon.webm" type="video/webm" >
+				</video>
+			</span>
+			I call the municipality officials for performance and so on. Or another example would be the formation of community gardens in Istanbul after the Gezi protests. Because otherwise you would just be sorry for yourself and there is nothing the person seeing this sorrow can do for you else than put you in the victim position. I want to stay out of that victim position, that is how I position myself. 
+			</p>
+	</div>
+ 	
+	<div class="col" >
+		<div class="datapoint" data-popout="9">
+			<span style="color:#add8e6; font-family: 'ralewaybold';"> Discussion after Censorship - Panel </span> <br><br>
+
+			YAMA organized a panel for definition of “visual pollution”. How did that panel go?
+		</div> 
+
+		<p class="popout popout-9">
+			
+			The purpose of that event was to share the censorship experiences people have lived through. For example, curators of the 4th Istanbul Youth Biennale attended. The best thing about the panel was that it brought together people who had lived similar experiences. To be honest, I wanted to give the stage to all the people who went through those kind of experiences that were there. There were so many censored artists! The panel created a solidarity.
+		</p>
+
+	</div>
+
+	<div class="col" >
+		<div class="datapoint" data-popout="10">
+			<span style="color:#add8e6; font-family: 'ralewaybold';"> Aftermath of Censorship</span> <br><br>
+
+			In a way, could you say that your work being censored brought awareness to the criticality of the situation?
+		</div> 
+
+		<p class="popout popout-10">
+			
+			 Many people say that there is no such thing as bad publicity. It has been featured in
+			<a href="#footnotes8"  id="fotnotes9" aria-describedby="footnote-label" id="footnotes-ref"> Art Forum </a>and
+
+			<a href="#footnotes9" id="fotnotes10" aria-describedby="footnote-label" id="footnotes-ref"> Hyperallergic</a>. <br>
+
+			<a href="#footnotes10" id="fotnotes11" aria-describedby="footnote-label" id="footnotes-ref">  A Time To Sing a New Song</a> 
+
+			wasn’t meant for that audience. I did that project for the people who pass Kasimpasa everyday. That was my audience. The work being shut down brought it to the art world. When you do public art you do that for the people who see it in their daily lives not for the art world.<br><br>
+
+			**So, then your work is spun within an Art context to situate you as a victim of censorship. <br><br>
+
+			Yes you enter a frame.
+		</p>
+
+	</div>
+	<div class="col" >
+
+		<div class="datapoint" data-popout="11">
+			<span style="color:#add8e6; font-family: 'ralewaybold';"> Not Everything is about Censorship, Let's Talk About role of Females </span> <br><br>
+
+			 In your works, along with many other topics you deal with the role of women and the gender bias, especially within Turkish culture. In your photo-performance series
+			<a onclick="return false"  class="imgopener" data-pop='8' target="blank" href="http://isilegrikavuk.net/services-view/departure-time/">Departure Time</a>,
+
+			you are reversing the gender bias by posing with an action done mostly by males.
+			-Can you talk about that?
+
+		</div> 
+		<span  class="draggableHelper draggableHelper-8" >
+				<img  class="pop pop-8" style="display: none !important; " id="image"src="images/departure-time.jpg"/>
+		</span>
+		<p class="popout popout-11">
+			
+			I don’t deal with that topic in all my works. It is inherent in certain works such as
+			<a href="#footnotes11" id="fotnotes12" aria-describedby="footnote-label" id="footnotes-ref"> Gül </a> 
+			and <a href="#footnotes12" id="fotnotes13" aria-describedby="footnote-label" id="footnotes-ref">Departure Time</a>  
+			and also <a target="blank" href="http://isilegrikavuk.net/services-view/time-to-sing-a-new-song-yeni-bir-sarki-soylemek-lazim-2016/"> A Time To Sing a New Song</a>. 
+
+			Like I said when you live in in those kind of environments you get effected by them.As a citizen you are affected by daily politics, urban transformation, how women are treated and so on. For the last two years I have been thinking more about how women are treated. <Br>I am sure you have felt it, there is a gaze when you walk on street in public space. There is always a control with gaze situation. Some acts in public space belong to men and women aren’t expected to do them. Getting shoes shined for example. There are few women that get their shoes shined. That inspired me to think of what it would be like if a woman got her shoes shined publicly. From there, I thought of marriage as one of the extreme points of womanhood and decided to use a gown. So I rented a gown we found a shoe shiner and took the photo.
+
+		</p>
+	</div>
+
+	<div class="col" >
+
+		<div class="datapoint" data-popout="12">
+			<span style="color:#add8e6; font-family: 'ralewaybold';"> Different Forms of Being Censored... </span> <br><br>
+
+			If we return back to censorship for a short time, do you think there are similarities between censorship that journalists experience and that artists experience? What are the differences?
+		</div> 
+
+		<p class="popout popout-12">
+			 Journalists are always in the public sight because of their medium. I have worked in news before. The format is very definite and if you go astray from it you are effected in another way. With art, you have more freedom, you can create your own strategy. Lately both mediums have developed self-censorship. Not to do certain things or write about certain topics. Actually there is the biggest problem. You can guess more or less what is going to be shut down or not so you decide to not say it. This concerns whole public not just artists or journalists. It can effect something you post on social media. You decide to stay silent.
+		</p>
+	</div>
+	
+	<div class="col">
+		<div class="datapoint" data-popout="13">
+			<span style="color:#add8e6; font-family: 'ralewaybold';">  Let’s talk about fiction! </span> <br><br>
+			<span  class="draggableHelper draggableHelper-10" >
+    			<iframe class="pop pop-10" style="display: none;" width="560" height="315" src="http://www.youtube.com/embed/cZ0xFRM4N1o" frameborder="0" allowfullscreen></iframe>
+    			
+			</span>
+			 I watched the video you created for 
+			<a onclick="return false"  target="blank" class="imgopener" data-pop='10' href="http://isilegrikavuk.net/services-view/infamous-library/">Infamous Library</a> 
+
+			
+			and I was really confused and then I read the article that it was for 11th Istanbul Biennial. It was hard for me to understand where fiction ended and reality started. You do blur these boundaries very intentional.When I watch your other works like
+
+			 <a href="#footnotes11" id="fotnotes12" aria-describedby="footnote-label" id="footnotes-ref"> Gül </a> 
+			I see a similar format. What similarities are present for you between fiction and interview format? 
+
+		</div> 
+		
+		<p class="popout popout-13">
+			Interview is a publication format and it is conceived to be a factual one. People take it as a fact. For instance, if I did Infamous Library as a movie, it would become something else. The audience would be aware that they are watching a film. But when you format the work as an interview it looks like a documentary. Then the surprise factor we talked about comes in play and that is why I choose the interview format. Talk shows are similar. These examples are all media formats. People tend to take what’s written in newspapers and magazines as facts but those are all constructed. There is someone who is writing those articles. Even changing a word includes a personal point of view to that story. I try to reflect that even facts are fictions. <br><br>First,  I did the video in 2006 for Infamous Library after that I was invited to the Istanbul Biennale in 2009. When I did the video I was thinking of 80’s
+			<a href="#footnotes13" id="fotnotes14" aria-describedby="footnote-label" id="footnotes-ref">coup</a>, 
+
+			12 people being taken in September and so on. After that with that coup history is being changed books are being burned. As it happened, the opening of Biennale that year was 12th of September and I wanted to do something that referenced this coincidence. I decided to turn this story to a news article and convinced some newspapers to get on board. <br><br>I also did a performance called
+			<a onclick="return false" class="imgopener" data-pop='11'  target="blank" href="http://isilegrikavuk.net/services-view/snapshot/">Snapshot</a>  
+			<span  class="draggableHelper draggableHelper-11" >
+    			<img  class="pop pop-11" style="display: none !important; " id="image"src="images/snapshot1.jpg"/>
+			</span>
+
+			where I fictionalized a newscast in which a news anchor was reading news that the audience wrote. I performed that piece in Istanbul in 2007 and in
+			<a href="#footnotes14" id="fotnotes15" aria-describedby="footnote-label" id="footnotes-ref">11. Sharjah Biennale</a>  
+
+			in 2013. I was quoting printed/real headlines and the audience was writing a story to it. All of these performances were happening in real-time and were live-streamed to the street. The performance is a newsreel but it is fictionalized.
+		</p>
+
+	</div>
+
+	<div class="col" >
+		<div class="datapoint" data-popout="14">
+			<span style="color:#add8e6; font-family: 'ralewaybold';">  Ways Of Using Fiction </span> <br><br>
+			How do you use fiction in <a href="#footnotes15" id="fotnotes16" aria-describedby="footnote-label" id="footnotes-ref">Every Kind Of Myth Is Written With Care</a>?	
+
+		</div> 
+		<p class="popout popout-14">
+			
+			I did <a onclick="return false" class="imgopener" data-pop="12" href="#">that project</a> with 
+			<span  class="draggableHelper draggableHelper-12" >
+    			<img  class="pop pop-12" style="display: none !important; " id="image"src="images/everykindofmyth.jpg"/>
+			</span>
+			<a href="#footnotes22"id="fotnotes23" aria-describedby="footnote-label" id="footnotes-ref"> Jo</a> 
+			who is also an SAIC graduate, we studied together. We were invited to a Biennale under the theme mythologies. We thought the theme was very cliché and started thinking about today's myths.<br><br> We started questioning if 
+
+			<a href="#footnotes16" id="fotnotes17" aria-describedby="footnote-label" id="footnotes-ref">tall man</a>
+
+			is a myth or what kind of myths does media create. Is Turkey being a world power a myth? Myth doesn’t just belong to the past. We wanted to show that what we know as the truth actually has fiction underneath and those spread with word of mouth. So we chose three texts. One of Them Roland Barthes’ Mythologies book, Sisyphus text and
+			<a href="#footnotes17" id="fotnotes18" aria-describedby="footnote-label" id="footnotes-ref">Recep Tayyip Erdogan’s Presidency speech</a> . 
+			We made the audience play Chinese whispers with a mashup text from those three sources. The outcome was very absurd. It was interesting is to show that process.
+
+		</p>
+	</div>
+
+	<div class="col" >
+		<div class="datapoint" data-popout="15">
+			Işıl, we are from different generations; we live in different countries but both of us are Turkish female artists that deal with social political conditions in our art. This might have an obvious answer but I am wondering why is this so. What pushes us to deal with same topics? Why do we feel the need to show these with art?	
+
+		</div> 
+		<p class="popout popout-15">
+			
+			There is something I always tell my students; when you first start doing art, you deal with yourself, you are solving an identity crisis about yourself. You define yourself first and then move to the next circle and define that. After you create your own self expression. You, and the circle you deal with are connected and you try to define yourself and your society.<br><br> In places like where we come from, the daily life situations and problems are so heavy it becomes hard to escape what you see. Your own personality gets shaped by your environment. There is always a political, social bombardment. And you can’t just be yourself, you feed off or get hurt by situations you live in. Therefore, even if you go further away, it is hard to escape these realities. It all accumulates to represent them. <br><br>
+			You mention, “as a Turkish…” . What is that Turkish Identity? What does it constitute? Your environment defines you with those identities you go by. For example, these days when you say “Turkey” [to a western audience], it brings up ISIS. Those terms aren’t synonymous for us, but for the outsider it can be. That’s why I think we’re dealing with what we can’t quite control, how you are represented to others. There are certain labels that we fall under and there is an effort to break those frameworks. Wherever you are, there is always an effort to express yourself clearly outside of these frames.
+		</p>
+	</div>
+
+
+	<div class="col" id="errorpop">
+		<div class="datapoint" data-popout="16" >
+
+			<span style="color:#add8e6; font-family: 'ralewaybold';"> Where Do Alternative, Activist Works Belong To? </span> <br><br>
+			You mentioned the environment of Turkey. From the fact that we are being represented by our president 
+			<a href="#footnotes18" id="fotnotes19" aria-describedby="footnote-label" id="footnotes-ref">Recep Tayyip Erdogan</a> 
+			or how Turks are being perceived by the Westernized mindset, you and I care and deal with these issues. Is there a tendency to show alternative, activist or social artworks in alternative spaces in Turkey?
+
+		</div> 
+		
+		<p class="popout popout-16">
+			
+			*Yes there is. Art world isn’t too disconnected in those manners. But the situation now is mixed. In 2007 those spaces were blooming but now slowly alternative spaces are closing.
+			<a href="#footnotes19" id="fotnotes20" aria-describedby="footnote-label" id="footnotes-ref">SALT Beyoglu</a> 
+
+			is closed, galleries are being closed. There isn’t too many alternative spaces left.<br>
+
+			Do these shutdowns come from necessity? <br>
+
+			*Yes, there are various problems from economical conditions to hidden censorships.
+		</p>
+		<div id="bayrak"></div>
+<!-- 		<img id="imagebl"  style="display:none; display:inline-block; z-index: 1003000; ;position: relative;top: 0px;" src="images/blackflag.jpg"/> -->
+	</div>
+
+	<div class="col" >
+	<div class="datapoint" data-popout="17">
+		<span style="color:#add8e6; font-family: 'ralewaybold';">  Thoughts On Media Spectacle </span> <br><br>
+		In your works you also deal with how the media creates a spectacle for their audiences. If we think of media organizations as places people learn the news from, do you think global media truly aims to inform people?
+
+	</div> 
+		<p class="popout popout-17">
+		
+			If you asked 10 years ago my answer would be different. The definition of mainstream media has changed, theories of  
+			<a href="#footnotes20" id="fotnotes21" aria-describedby="footnote-label" id="footnotes-ref">McLuhan </a> 
+			have been changing . Less people follow mainstream media nowadays maybe followers of the government do. For me, I follow twitter more than any other source nowadays. Personal networks have strengthened. I don’t believe in mainstream global media companies anymore. I know they are manipulating so I use twitter. I believe in independent publication.
+
+		</p>
+	</div>
+
+	<div class="col" >
+	<div class="datapoint" data-popout="18">
+		<span style="color:#add8e6; font-family: 'ralewaybold';">  Social Media vs. Media </span> <br><br>
+		Do you think social media does a better job than mainstream media these days? I also follow news on twitter but I like reading from many sources. Since Arab spring, social media has gained importance.
+	</div> 
+		<p class="popout popout-18">
+		
+			It seems like that, but I am skeptical as to how much this changes the existing truth. For example, during Gezi protests people were organized from twitter or whatsapp but later on not so much has changed. There are certain power balances that is very dominant and it is hard to change them. But social media is important to change that balance of power. Everything got fragmentized. On the other hand going on the street to take act has changed its form. People write to twitter from their houses. I find this a fascinating process and we will all see where this leads to.
+
+
+		</p>
+	</div>
+
+	<div class="col">
+	<div class="datapoint" data-popout="19" id="errorpop3"  >
+		<span style="color:#add8e6; font-family: 'ralewaybold';">  How To Act With Fear? </span> <br><br>
+		I agree that acting physically has decreased. Does this have to do with the fact that people got scared after Gezi events? Not only that, but people are afraid to speak out. For example, even high school students, people we wouldn’t know about are  
+		<a href="#footnotes21" id="fotnotes22" aria-describedby="footnote-label" id="footnotes-ref">taken to custody</a>
+		because of what they write. How can we act on the issues we read when there is so much fear?
+	</div> 
+		<div id="gezi"></div>
+		<p class="popout popout-19">
+		
+		I think the potential lies in finding new ways of protest. Or by not shouting out in the street but rather being camouflaged and finding clever strategies to deal with problems. Because government regulated forms don’t work anymore. People act smarter now. <br><br> Also during the Gezi protest, high schoolers acted very strategically when organizing the masses or barricading streets. It was almost as if these were reflections of social media. In creative protests or acting upon something new ways have developed and I think this is the best place where art meets the public, it becomes a community practice. And this potential lies in <a onclick="return false" class="imgopener" data-pop="13" href="http://www.mhpbooks.com/turkish-publishing-houses-unite-in-gezi-park-to-distribute-books/"> free library</a>
+		<span  class="draggableHelper draggableHelper-13" >
+    			<img  class="pop pop-13" style="display: none !important; " id="image"src="images/freelib.jpg"/>
+		</span>
+		, creating an <a onclick="return false" class="imgopener" data-pop="14" href="http://www.uncubemagazine.com/blog/9890183">open kitchen</a>
+		<span  class="draggableHelper draggableHelper-14" >
+    			<img  class="pop pop-14" style="display: none !important; " id="image"src="images/openkitchen.jpg"/>
+		</span>
+		and acts like these. And this is everywhere not just Turkey. The collective solidarity gives me hope.
+
+
+		</p>
+	</div>
+	<div class="col" >
+	<div class="datapoint" data-popout="21">
+		<span style="color:#add8e6; font-family: 'ralewaybold';">  Global Connections, Global Solidarities </span> <br><br>
+		Artists from different cultures deal with inequalities within their own cultures, how can we all come together and create a global change? While Turkish artists deal with their social issues and political unrest, how can we stand in solidarity with other middle easterners experiencing terror, with the<a href="#footnotes23" id="fotnotes24"aria-describedby="footnote-label" id="footnotes-ref">Black Lives Matter movement </a> in U.S, or the united indigenous movement against the
+		<a href="#footnotes24" id="footnotes25" aria-describedby="footnote-label" id="footnotes-ref">North Dakota Pipeline</a> ? 
+	</div> 
+		<p class="popout popout-21">
+		
+		I think this is where the idea of community becomes impactful. These communities could just be within artist peers or student groups, they could start small and then connect with a global network of international artist communities. This may sound utopian but communities are very valuable. <br><br> I had a teacher at SAIC, <a href="#footnotes25" id="fotnotes26" aria-describedby="footnote-label" id="footnotes-ref">Tania Bruguera</a> who is a  Cuban activist artist. Last year she did a performance in Cuba and was  <a href="#footnotes26" id="fotnotes27" aria-describedby="footnote-label" id="footnotes-ref">taken into custody</a>. In such situations, the more people you have around you, standing with you, the harder it is for the governments to take an action against you. There were a lot of organizations around Tania Bruguera. Or in Bilgi University [where she teaches] a teacher was fired and other teachers came together around that issue.<br><Br> What I am saying is coming together with the others becomes fundamental. Of course from here I can’t change anything about Black Lives Matter but if I can contribute to them even slightest, that would count as something.<br> 
+		**Awareness becomes important. Even if you can’t change it directly you can bring awareness to the criticality of the situations.<br><Br>
+		Yes you are correct even if just changing a word, developing the language in a that matter it affects how people think. That is important. For now, I am interested in small acts. 
+	</div>
+
+	<div class="col" style="display: block; width: 80%; left: 7%; box-shadow: 1px 3px 3px 6px #aff68b; color: white;" >
+	<div class="datapoint" data-popout="22" style="text-align:center;" >
+		BIBLIOGRAPHY <br> <span style="font-size:14px;"> <i>all links take you to external pages</i> </span></div>
+		<footer>
+			<ol style="list-style: outside;">
+				<p class="popout popout-22" >
+					
+					<div style=" top: 4%; font-size: 20px; width: 27%; position: relative;" >
+					<li id="footnotes"><a target="blank" href="http://www.hurriyetdailynews.com/timeline-of-gezi-park-protests-.aspx?pageID=238&nID=48321&NewsCatID=341"> Gezi protests </a><a href="#fotnotes1" aria-label="Back to content">↩</a></li> <br>
+					
+					<li id="footnotes1"><a target="blank" href="http://www.bbc.com/news/world-europe-22962526">Standing Man</a><a href="#fotnotes2" aria-label="Back to content">↩</a></li><br>
+
+					<li id="footnotes2"><a target="blank" href="https://en.wikipedia.org/wiki/Mimar_Sinan_Fine_Arts_University">Mimar Sinan Fine Arts Institute</a><a href="#fotnotes3" aria-label="Back to content">↩</a></li> <br>
+					
+					<li > <a target="blank" href="https://en.wikipedia.org/wiki/Justice_and_Development_Party_(Turkey)">AKP</a></li> <br>
+				
+					<li id="footnotes3"><a target="blank" href="http://www.artfulliving.com.tr/sanat/bir-gorunurluk-eylemi-uzerine-notlar-i-7469">Camouflage exhibition</a><a href="#fotnotes4" aria-label="Back to content">↩</a></li><br>
+					
+					<li id="footnotes10"><a target="blank" href="http://isilegrikavuk.net/services-view/time-to-sing-a-new-song-yeni-bir-sarki-soylemek-lazim-2016/"> A Time To Sing a New Song</a><a href="#fotnotes11" aria-label="Back to content">↩</a></li> <br>
+
+					<li id="footnotes4"><a target="blank" href="http://hyperallergic.com/297665/turkish-government-censors-video-projection-and-youth-biennial-artworks/">“visual pollution”</a><a href="#fotnotes5" aria-label="Back to content">↩</a></li> <br> 
+
+					<li id="footnotes5"><a target="blank" href="https://www.facebook.com/geocyclab/photos/a.364693563609950.93839.171525979593377/1113989345347031/?type=3&theater">Censorship of Youth Biennale</a><a href="#fotnotes6" aria-label="Back to content">↩</a></li><br> 
+
+					<li id="footnotes6"><a target="blank" href="http://isilegrikavuk.net/services-view/infamous-library/">Infamous Library</a><a href="#fotnotes7" aria-label="Back to content">↩</a></li><br>
+
+					<li id="footnotes8"><a target="blank" href="http://artforum.com/news/id=59889">Art Forum Article </a><a href="#fotnotes9" aria-label="Back to content">↩</a></li><br>
+
+					<li id="footnotes7"><a target="blank" href="http://isilegrikavuk.net/services-view/change-will-be-terrific/">Change Will Be Terrific</a><a href="#fotnotes8" aria-label="Back to content">↩</a></li><br>
+					
+					</div>
+					<div style="position: absolute; left: 37%; width: 27%; top: 15%; font-size: 20px; display: inline-block; word-wrap: break-word;">
+					
+					<li id="footnotes8"><a target="blank" href="http://artforum.com/news/id=59889">Art Forum Article </a><a href="#fotnotes9" aria-label="Back to content">↩</a></li><br>
+
+					<li id="footnotes9"><a target="blank" href="http://hyperallergic.com/297665/turkish-government-censors-video-projection-and-youth-biennial-artworks/">Hyperallergic Article</a><a href="#fotnotes10" aria-label="Back to content">↩</a></li><br>	
+
+					<li id="footnotes11"><a target="blank" href="http://dai.ly/xbis6z"> Gül </a><a href="#fotnotes12" aria-label="Back to content">↩</a></li><br>	
+
+					<li id="footnotes12"><a target="blank" href="http://isilegrikavuk.net/services-view/departure-time/">Departure Time</a><a href="#fotnotes13" aria-label="Back to content">↩</a></li><br>
+
+					<li id="footnotes13"><a target="blank" href="https://en.wikipedia.org/wiki/1980_Turkish_coup_d%27%C3%A9tat">80's coup</a><a href="#fotnotes14" aria-label="Back to content">↩</a></li><br>
+
+					<li id="footnotes14"><a target="blank" href="http://u-in-u.com/sharjah-biennial/2013/tour/calligraph-square/26-isil-egrikavuk/">11. Sharjah Biennale</a><a href="#fotnotes15" aria-label="Back to content">↩</a></li><br> 
+
+					<li id="footnotes15"><a id="linkopener" target="blank" href="http://isilegrikavuk.net/services-view/every-kind-of-myth-is-written-with-care-3/">Every Kind Of Myth Is Written With Care</a><a href="#fotnotes16" aria-label="Back to content">↩</a></li><br>
+
+					<li id="footnotes16"><a target="blank" href="http://bigstory.ap.org/article/994c0935c89c411cad8b3c2c35a5f0b0/those-who-love-him-turkeys-erdogan-tall-man">"Tall Man"</a><a href="#fotnotes17" aria-label="Back to content">↩</a></li><br>
+
+					<li id="footnotes17"><a  target="blank" href="https://www.youtube.com/watch?v=3p81XSSEZuE">Recep Tayyip Erdogan’s Presidency speech</a><a href="#fotnotes18" aria-label="Back to content">↩</a></li><br> 
+					</div>
+					<div style="position: absolute; left: 69%; top: 15%; font-size: 20px;">
+					<li id="footnotes18"><a target="blank" href="http://www.bbc.com/news/world-europe-13746679">Recep Tayyip Erdogan</a><a href="#fotnotes19" aria-label="Back to content">↩</a></li><br> 
+					<li id="footnotes19"><a target="blank" href="https://news.artnet.com/art-world/salt-istanbul-turkish-government-413321">Closing of SALT Beyoglu</a><a href="#fotnotes20" aria-label="Back to content">↩</a></li> <br>
+					<li id="footnotes20"><a target= "blank" href="http://teleensm.ummto.dz/pluginfile.php/201482/mod_resource/content/1/%5BMarshall_McLuhan%5D_Understanding_media(BookZa.org).pdf">Marshall McLuhan </a><a href="#fotnotes21" aria-label="Back to content">↩</a></li><br>
+					<li id="footnotes21"><a target="blank" href="http://www.dw.com/en/high-school-student-arrested-for-insulting-turkeys-erdogan/a-18151825">"High School Student gets arrested for insulting the president"</a><a href="#fotnotes22" aria-label="Back to content">↩</a></li><br>
+					<li id="footnotes22"><a target="blank" href="http://www.berlinale-talents.de/bt/talent/jozefe-amado/profile">Jozef E. Amado</a><a href="#fotnotes23" aria-label="Back to content">↩</a></li><br>
+					<li><a target="blank" href="http://www.mhpbooks.com/turkish-publishing-houses-unite-in-gezi-park-to-distribute-books/"> Free Library</a></li><br>
+					
+					<li id="footnotes23"> <a target="blank" href="http://blacklivesmatter.com/">Black Lives Matter movement </a><a href="#fotnotes24" aria-label="Back to content">↩</a></li><br>
+					<li id="footnotes24"><a target="blank" href="http://www.firstpeoples.org/who-are-indigenous-peoples/the-indigenous-movement">North Dakota Pipeline</a><a href="#fotnotes25" aria-label="Back to content">↩</a></li><br> 
+					<li id="footnotes25"><a id="linkopener" href="http://www.taniabruguera.com/cms/">Tania Bruguera </a><a href="#fotnotes26" aria-label="Back to content">↩</a></li><br>
+					<li id="footnotes26"><a target="blank" href="http://hyperallergic.com/213188/artist-tania-bruguera-arrested-again-in-havana-injured-by-police/">Tanya Bruguera Arrest</a><a href="#fotnotes27" aria-label="Back to content">↩</a></li><br>
+					</div>
+				</p>
+			</ol>
+		</footer>
+	</div>
+	
+</ul>	
+</article>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script>
+
+$(window).scroll(function() {
+   var hT = $('#scroll-to').offset().top,
+       hH = $('#scroll-to').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+    // console.log((hT-wH) , wS);
+ if (wS > (hT+hH-wH)){
+     $("#qmark").css("display", "block");
+   }
+     });
+
+// jQuery(function($) {
+//     $('.linkopener').contextmenu(function() {
+//         window.open( this.href, '_blank' );
+//         return false;
+//     })
+// });
+//fadeout error images
+
+// $('#errorpop').click(function() { 
+//         $('#bayrak').toggle();
+//         $('#bayrak').fadeOut(5000);   
+//  });
+
+
+
+// $('#errorpop1').click(function() { 
+//         $('#kirmizi').show();
+//         $('#kirmizi').fadeOut(5000);
+        
+//  });
+
+// $('#errorpop2').click(function() { 
+//         $('#bayrak').toggle();
+//         $('#bayrak').fadeOut(5000);
+        
+//  });
+
+
+// $('#errorpop3').click(function() { 
+//         $('#gezi').toggle();
+//         $('#gezi').fadeOut(5500);
+        
+//  });
+
+//splash page enter to main interview page
+ $('.enter_link').click(function() { 
+        $('#splashscreen').fadeOut(500);
+        
+ });
+  $('#qmark').click(function() { 
+
+        $( "#dialog" ).dialog({
+
+        	  	resizable: false,
+				width: 450,
+				modal: true,
+				dialogClass: 'no-close success-dialog'
+
+        });
+ });
+
+//color array for background gradient
+var colors = new Array(
+  [212,195,223],
+  [62,35,255],
+  [255,35,98],
+  [45,175,230],
+  [109,204,109],
+  [255,0,255],
+  [255,128,0]);
+
+var step = 0;
+//color table indices for: 
+// current color left
+// next color left
+// current color right
+// next color right
+var colorIndices = [1,0,2,3];
+
+//transition speed
+var gradientSpeed = 0.002;
+
+ function updateGradient()
+{
+  
+  if ( $===undefined ) return;
+  
+var c0_0 = colors[colorIndices[0]];
+var c0_1 = colors[colorIndices[1]];
+var c1_0 = colors[colorIndices[2]];
+var c1_1 = colors[colorIndices[3]];
+
+var istep = 1 - step;
+var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
+var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
+var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
+var color1 = "rgb("+r1+","+g1+","+b1+")";
+
+var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
+var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
+var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
+var color2 = "rgb("+r2+","+g2+","+b2+")";
+
+//apply css rule to all with gradient id
+ $('#gradient').css({
+   background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"}).css({
+    background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
+  
+  step += gradientSpeed;
+  if ( step >= 1 )
+  {
+    step %= 1;
+    colorIndices[0] = colorIndices[1];
+    colorIndices[2] = colorIndices[3];
+    
+    //pick two new id="gradient"target color indices
+    //do not pick the same as the current one
+    colorIndices[1] = ( colorIndices[1] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
+    colorIndices[3] = ( colorIndices[3] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
+    
+  }
+}
+//call gradient
+setInterval(updateGradient,14);
+//add other images to the dictionary!
+var imgDict = {
+	"3" : {
+		idToToggle: "#errorpop1",
+		idOfImg:"#kirmizi"
+	},
+	"6" : {
+		idToToggle: "#errorpop2",
+		idOfImg:"#bayrak"
+	},
+	"19" : {
+		idToToggle: "#errorpop3",
+		idOfImg:"#gezi"
+	},
+	"16" : {
+		idToToggle: "#errorpop",
+		idOfImg:"#bayrak"
+	}
+}
+//function to open question div boxes
+ //when you click obj with datapoint class
+$('.datapoint').click(function() {
+	//create variable for data-poput number
+	var popout = $(this).data('popout');
+	if (imgDict.hasOwnProperty(popout) && $('.popout-' + popout).css('display') == 'none' ) {
+		$(imgDict[popout].idOfImg).toggle();
+		$(imgDict[popout].idOfImg).fadeOut(5000);
+
+	};
+	//toggle class with popout
+	$(".popout-" + popout).toggle();
+});
+
+//function to open images from a links
+$( ".imgopener" ).bind( "click", function( event ) {
+ 	//create variable for data-pop number in that a link
+	var pop = $(this).data('pop');
+	//toggle class with adding that variable number spesific for each pic to pop class
+	$(".pop-" + pop).toggle();
+	//add variable of each image to their draggable classed div 
+	$('.draggableHelper-' + pop).draggable();
+	$(".pop-" + pop).resizable({aspectRatio: true, handles: "ne, e, se, w" });
+});
+$( ".imgopener" ).bind( "dblclick", function() {
+  window.open( this.href, '_blank' );
+});
+$( ".imgopener" ).bind( "mouseenter mouseleave", function( event ) {
+  $( this ).toggleClass( "over" );
+});
+
+if (window.matchMedia("(max-width: 650px)").matches) {
+  /* the viewport is at least 400 pixels wide */
+ alert('Please view from a computer for full interactivity!');
+} else {
+  /* the viewport is less than 400 pixels wide */
+ 
+}
+ var w = $(window).width();
+ var h = $(window).height();
+ $('#imagebl').css('width', w);
+ $('#imagebl').css('height', h);
+
+
+
+</script>
+</body>
+</html>

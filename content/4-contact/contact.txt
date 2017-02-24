@@ -1,0 +1,13 @@
+Title: Contact 
+
+
+----
+Text:
+
+
+(email: info@publixcess.com text: Send us an email!)
+(link: https://www.instagram.com/publixcess/?hl=en text:Instagram)
+(link: https://www.facebook.com/Public-Excess-1725359137729740/ text:Facebook)
+
+
+----

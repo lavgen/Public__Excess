@@ -1,0 +1,102 @@
+---------------   KENDIME NOTLAR ------------
+
+HEADER.PHP - logoyu degistiriyosun (eski logo svg)
+menu.php-menudeki linkleri degistirebilirsin 
+
+main.hr (main.css de height i 0 yaptim-border cikariyor publixcess in altina)
+pairfont:
+Nunito&Lora
+Nunito&Alegreya
+
+PUBLIXCESS SEPT 7 MEETING
+-menu not bold //
+-hairline around edges //
+-current issue to coming soon on tab //
+- screenshot for insta and fb to get it going 
+Harlo Holmes - contact (?)
+
+======== 8 Eylul ===========
+publixcess.com/home - 
+yukledim test etmek icin projects snippet i gozukmuyor *Sorun Cozuldu  >> 
+snippets/projects.php yerine snippet/Projects.php yaptim
+border id = hairline
+dom add event listener  - search for scroll 
+infinite scroll
+======== 15 Eylul ===========
+
+bottomborders class = for drawing lines under each section
+changed hairline border with thicker, i liked it 
+size i % den pixele cevirdim thumbnaillarin ki ekran kuculunce ust uste cikmasinlar
+studio meeting::::::
+Holmes - email draft corrected
+Publixcess-organizational::text for coordination - email for formal stuff
+
+SEPT 30 NOTES
+--------------------
+ 15th October:  Content Deadline
+ 21-22th October : Publication
+ TO CHANGE
+  **figure out how to export maya object/render into webpage
+  *****(to think about) resizeable text - how to put align 
+  **external pages and video orders mixed 
+
+  |(DONE)**Every work on page will have a corresponding link at top of page
+  |(DONE)**thumbnails move to where footers are(mail,fb.insta)!!! 
+  |(DONE)**hairline div thinnerrr !!! 0.07cm 
+  |(DONE)**about/contact/cont artist isnt on main page
+
+  $$$GIFS take the less place among :: gifs, mov, mp4 -  **What format is the logo gonna be in = gif
+MEV TO DO :
+** we will have a splash page / the theme
+**"DIASPORA<>DISAPORA" GIF !!!
+**Publixcess logo ((fluid colors - for Mev to do on Sunday))
+8 artists
+	4 external webpages : 
+		DONE		-interactive webpage for Isil (put i instead of qmark)
+		WEEKEND	-interactive maya export for Miyo (miyo is giving test weekend)
+		DONE	-external page for Roxy --- do it on Friday!!!
+    DONT KNOW YET -external page for Jessica
+            -external page for Shala, for her interactive poem! (mev will give videos before weekend)
+	5 videos  
+			 (1 interactive webpage, 1 maya export (for these external webpages), 5 video format, 1 video + interactive poem, 1 audio (Roxy) video piece)
+
+
+-----______-----Link navigating to ids or seperate pages from snippets/menu.php
+hairline color: #7389c7;
+FONTS TO USE :: COM4T - DIDOT LIGHT
+--pair Shala and Alp ( mon 8) 
+--Fat City Gallery
+-----Hibas interview& videos========
+
+on top interview- centered 
+below margin-bottom
+names in that margin bottom
+underneath 3 videos fullwindow size stacked 
+
+----Shala&Janelle-------
+vids automatically playing at same time 
+two vids start one size of corner they start at same time with autoplay
+they should be moved around - not stretcheble
+bg - which format gif, 
+
+
+notes on website:::
+How links work: one click image, dblclick is link -
+---- where there is no image links are openable with one click
+:: 1st change will be terrific works , 
+---------
+addd info to splash page "this interview originally conducted in istanbul turkey the day of the coup translated into english by ..."
+footnote of links and have corresponding number for those links
+didot font for hiba!!
+
+HOMEPHP DEN SILDIKLERIM:::
+son </li> ve </div> in arasi
+<!--    <?php foreach($pages->first()->visible() as $section) : ?>
+ -->      
+<!--  <?php  snippet($section->uid(), array('data' => $section)) ?>
+ -->      
+<!--  <?php snippet('footer');?>
+ -->    
+<!--    <?php endforeach ?>
+ -->
+

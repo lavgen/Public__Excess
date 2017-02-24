@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<style>
+		@font-face {
+			  font-family: 'COM4tSansMedium';
+			  font-style: normal;
+			  src: url(../../assets/fonts/COM4tSansMedium.woff) format('woff');
+		}
+		#splashscreen{
+			font-family: 'Didot';
+			font-size: 18px;
+			width: 50%;
+			margin-left: 25%;
+			height: 20%;
+			margin-top: 20%;
+		}
+		img{
+
+			box-shadow: 1px 1px 1px 2px black;
+			width: 28%;
+
+		}
+		#img1{
+			position: absolute;
+			display: none;
+			margin-top: 2%;
+			margin-left: 10%;
+		}
+		#img2{
+			position: absolute;
+			display: none;
+			margin-top: 2%;
+			right: 10%;
+		}
+	
+		.all{
+	
+		}
+		.links{
+			    font-size: 5em;
+			    font-family: 'COM4tSansMedium';
+			    display: block;
+			    line-height: 0px;
+			    text-align: right;
+			    margin-right: 50px;
+			    margin-top: 40px;
+			    color: #aa0000;
+		}
+	</style>
+	<body>
+		<div id="splashscreen">
+			The shadow is a resting point. The shadow counters the selfie while still resembling one and holding the place of one. Our shadow selves are the aspects of our character that challenge us and morph to our different social interactions- they perform. They extend out our feet and tower above at great distance. They present themselves in the dimmest of rooms and extend past our closed and spread legs to remind us. The shadow is the shadow of subject; the performance of our hailing. The ability to outstretch the flesh and create a morphing virtual space in the name of me.<br>
+			<a href="#" style="color:#aa0000" class="enter_link"><i>A colloboration between Liz Mputu and Zeynab Gh </i></a>
+			
+		</div>
+		
+		<a id="lastlink" class="links" style="display:none;" href="#"> Images</a>
+		<a id="restart" class="links" style="display:none;" href="#"> Restart</a>
+		<div id="imagelist">
+			<img class="set1 all" id="img1"  src="images/1.jpg" alt="ImageSet_1">
+			<img class="set1 all" id="img2" src="images/2.jpg" alt="ImageSet_1">
+			<img class="set2 all" id="img1" src="images/3.jpg" alt="ImageSet_2">
+			<img class="set all" id="img2" src="images/4.jpg" alt="ImageSet_2">
+			<img class="set3 all" id="img1" id="img5" src="images/5.jpg" alt="ImageSet_3">
+			<img class="second3 all" id="img2" id="img6" src="images/6.jpg" alt="ImageSet_3">
+			<img class="set4 all" id="img1" id="img7" src="images/7.jpg" alt="ImageSet_4">
+			<img class="setfour all" id="img2" id="img8" src="images/8.jpg" alt="ImageSet_4">
+
+		</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+	
+	 $('.enter_link').add('#restart').click(function() { 
+        $('#splashscreen').fadeOut(500);
+        $('img').css('display') == 'inline-block';
+
+      	$('#img1').fadeIn(5400);
+      	$('#img2').delay(1000).fadeIn(5400);
+      	$('#img1').delay(3000).fadeOut(600);
+      	$('#img2').delay(3000).fadeOut(600);
+
+      	$('.set2').delay(9200).fadeIn(5400);
+      	$('.set').delay(10200).fadeIn(5400);
+      	$('.set2').delay(3000).fadeOut(600);
+      	$('.set').delay(3000).fadeOut(600);
+
+        $('.set3').delay(18800).fadeIn(5400);
+      	$('.second3').delay(19800).fadeIn(5400);
+      	$('.set3').delay(3000).fadeOut(600);
+      	$('.second3').delay(3000).fadeOut(600);
+
+      	$('.set4').delay(28400).fadeIn(5400);
+      	$('.setfour').delay(29400).fadeIn(5400);
+      	$('.set4').delay(3000).fadeOut(600);
+      	$('.setfour').delay(3000).fadeOut(600);
+      	$('#lastlink').delay(39500).fadeIn(50);
+      	$('#restart').delay(39500).fadeIn(50);
+   
+
+      	
+ 	});
+
+	 $('#lastlink').click( function(){
+	 	$('.all').css({"margin-left": "15%"});
+	 	$(".all").css({"display" : "inline-block" , "position" : "inherit"});
+	 })
+
+	 $('#restart').click(function(){
+	 	location.reload();
+	 })
+
+	 
+
+	 
+	
+		  
+	
+	 	 
+	
+	 
+     
+	 </script>
+	</body>
+
+</html>

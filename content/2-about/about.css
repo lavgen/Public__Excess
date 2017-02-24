@@ -1,0 +1,34 @@
+#abt {
+    font-size: 2.3em;
+    display: block;
+    text-align: justify;
+    padding-left: 4%;
+    padding-right: 4%;
+    line-height: 1.5em;
+    padding-top: 5%;
+    font-weight: 500;
+}
+p{
+	text-align: left;
+	padding-left: 4%;
+	width: 90%;
+	margin-left: 2%;
+	color: black;
+	font-family: 'Didot';
+}
+
+h1{
+	text-align: center;
+	font-family: 'COM4tSansMedium';
+
+}
+h2{
+	padding-left: 6%;
+}
+
+
+@media (max-width:490px){
+	#abt{
+		font-size: 1em;
+	}
+}

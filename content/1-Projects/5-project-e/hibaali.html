@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hiba Ali/Publixcess</title>
+		<meta name="description" content="Interview with Isil Egrikavuk, October 2016">
+		<meta name="keywords" content="HTML,CSS,Jquery,Art,Turkey,ContemporaryArt,StandingMan,Gezi Protests, AKP, Artists">
+		<meta name="Author" content="Lal Avgen">
+		
+		
+
+	</head>
+	<style>
+
+	@font-face {
+		  font-family: 'Didot';
+		  font-style: normal;
+		  src: url(font/didot.woff) format('woff');
+	}
+	html{
+		overflow-x: hidden;
+		font-family: 'Didot';
+	}
+	#h1{
+		font-family: 'Didot';
+		position: absolute;
+		display: inline-block;
+		top: 5%;
+		left: 20%;
+		font-size: 1.2em;
+		margin-bottom: 2px;
+	}
+	.video-responsive {
+		font-family: 'Didot';
+	    overflow: visible;
+	    padding-bottom: 56.25%;
+	    position: absolute;
+	    height: 0px;
+	    width: 100%;
+	    margin-left: 1px;
+	    margin-right: 1px;
+	    left: 0px;
+	    top: 5%;
+	}
+	.video-responsive iframe{
+	    top: 0;
+	    height: 60%;
+	    width: 60%;
+	    position: absolute;
+	    left: 50%;
+	    top: 40%;
+	    transform: translate(-50%, -50%);
+	}
+
+.embed-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%;
+	top: 900px;
+
+	 } 
+.embed-container iframe, .embed-container object, .embed-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+	</style>
+	<body>
+		
+		<div id="h1" style="font-family: 'Didot';"> <i> In Conversation With</i> Hiba Ali </div>
+		<div class="video-responsive">
+			<iframe src="https://player.vimeo.com/video/193196773?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<span style=" display:inline-block; left: 20%; top:69%; -webkit-transform: scale(3); position: absolute;"><br>&#x261f;</span>
+		</div>
+		
+		 <span style="position: absolute; top: 800px;left:1%; font-size:1.8em; text-decoration:underline;" >Post-Colonial Language Segments</span>
+		
+
+		<div class='embed-container'>
+			<iframe src="https://player.vimeo.com/video/187382415?title=1&byline=0&portrait=0" width="width" height="height"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+
+		<div class='embed-container'>
+			<iframe src="https://player.vimeo.com/video/187385158?byline=0&portrait=0" width="width" height="height"  frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		</div>
+
+		<div class='embed-container'>
+			<iframe src="https://player.vimeo.com/video/187382849?byline=0&portrait=0"  frameborder="0"width="width" height="height"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+
+		<div class='embed-container'>
+			<iframe class="plvideo" src="https://player.vimeo.com/video/187383306?title=1&byline=0&portrait=0" width="width" height="height" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+
+		<div class='embed-container'>
+			<iframe class="plvideo" src="https://player.vimeo.com/video/187384268?title=1&byline=0&portrait=0" width="width" height="height" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script>
+		var width = $(window).width(); //get the width of the screen
+		$('.plvid').css("width",width); //set the width to the class
+		var height = $(window).height(); //get the width of the screen
+		$('.plvid').css("height",height); //set the width to the class
+
+	var zoomlevel=1;
+
+    $("body").dblclick(function(ev) {
+        zoomlevel = zoomlevel == 1 ? 2 : 1;
+
+
+
+        $(this).css({
+            "-moz-transform":"scale("+zoomlevel+")",
+            "-webkit-transform":"scale("+zoomlevel+")",
+            "-o-transform":"scale("+zoomlevel+")",
+            "-ms-transform":"scale("+zoomlevel+")"
+        });
+
+
+    });
+
+	</script>
+	</body>
+</html>

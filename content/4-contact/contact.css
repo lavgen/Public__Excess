@@ -1,0 +1,30 @@
+
+h1{
+font-family: 'COM4tSansMedium';
+text-align: center;
+font-size: 3em;
+margin-left: 0%;
+width: 100%;
+left: 50%;
+margin-left: 32%;
+}
+p{
+font-family: 'Didot';
+display: inline-block;
+width: 100%;
+font-size: 4em;
+margin-top: 5%;
+left: 0%;
+position: absolute;
+}
+
+.text{
+		width: 100%;
+		margin-left: 14%;
+}
+
+@media (max-width:490px){
+	p{
+		font-size: 1em;
+	}
+}

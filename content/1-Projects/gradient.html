@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<style>
+#gradient
+{
+    height:300px;
+    width:300px;
+    border:1px solid white;
+    font-size:30px;
+    background: linear-gradient(180deg,  rgba(115, 137, 199,1),rgba(255, 255, 255,1));
+    background-size: 190% 190%;
+    background-position: -500px -500px;
+ 
+    -webkit-animation: Animation 10s infinite ;
+    -moz-animation: Animation 5s ease infinite alternate;
+    animation: Animation 5s ease infinite alternate;
+    
+}
+
+@-webkit-keyframes Animation {
+    100%{background-position:-300% -300%}
+    80%{background-position:-10% -100%}
+    60%{background-position:0% 0% }
+    40%{background-position:60% 60%}
+    20%{background-position:80% 80%}
+    0%{background-position:100% 100%}
+  
+   
+}
+/*@-moz-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@keyframes Animation { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}*/
+
+
+</style>
+<body>
+	
+    
+<div id="gradient">
+  Hello
+</div>
+
+    <script>
+    var x = screen.height;
+    
+    </script>
+</body>
+</html>

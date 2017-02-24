@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	</head>
+	<style>
+	@font-face {
+		  font-family: 'Didot';
+		  font-style: normal;
+		  src: url(../5-project-e/font/didot.woff) format('woff');
+			}
+	html{
+		font-family: 'Didot';
+			
+		}
+	a{
+		display: block;
+		font-size: 2em;
+		top: 90%;
+    	position: absolute;
+	}
+	h1{
+		text-align: center;
+	}
+	
+	#intro{
+		text-align: justify;
+		font-size: 2.2em;
+		width: 70%;
+		margin-left: 15%;
+	}
+	 .glow {
+        -webkit-animation-duration: 0.5s;
+        -webkit-animation-name: glow;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-timing-function: ease;
+        -webkit-animation-iteration-count: infinite;
+        animation-duration: 0.5s;
+        animation-timing-function: ease;
+        animation-direction: alternate;
+        animation-name: glow;
+      
+        animation-iteration-count: infinite;
+    
+    }
+    
+    @-webkit-keyframes glow {
+        from { text-shadow: 0 0 0px blue; }
+        to { text-shadow: 0 0 2px blue; }
+    }
+	</style>
+	<body>
+		<div class="glow" >
+			
+			<a href="ImmigrantDungeon/MVS_ImmigrantDungeon_MAC.app.zip" download> Mac version </a>
+			<a style="margin-left: 87%;" href="ImmigrantDungeon/MVS_ImmigrantDungeon_PC.zip" download> PC version </a>
+				
+		</div >
+		<!-- <div class="video-responsive">
+			<iframe src="https://player.vimeo.com/video/190445599?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			
+		</div> -->
+		<div id="intro">A virtual site commissioned for Public Excess, Miyö Van Stenis locates this interview within the liminal space of an immigrant dungeon. In conversation with Mev Luna, Van Stenis frames her work within political context of the current economic crisis and military dictatorship in Venezuela. Luna and Van Stenis discuss the corporatization of the internet, the potentiality of virtual reality, and Van Stenis' body of work and curatorial projects. She shares about her latest piece War Room included as part of the Digital Museum of Digital Art's Exhibition, Morphé Presence.
+		<br><br>
+		<span style="color:red;">Content Warning:</span> This piece includes graphic content
+		<br>
+		<i>Instructions:</i>
+		Download and install the app. <b><span style="text-decoration:underline;">Hit spacebar</b></span> to play. Use arrow keys and mouse pad to navigate the space.
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+		</script>
+		<script>
+		$(document).ready(function () {
+		    $('#fade').fadeIn(15000).removeClass('hidden');
+		});
+		</script>
+	</body>
+</html>

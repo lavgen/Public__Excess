@@ -1,0 +1,29 @@
+Title: About
+
+----
+
+Text: <div id="abt" > Public Excess is an online international contemporary media publication dedicated to the intersection of local and global politics with art and digitial mediums. Using the model of Public Access-television–which is traditionally a form of non-commercial mass media available to the general public–Public Excess applies this model to the form of the internet. </div>
+
+
+
+
+# Collective
+## Lal Avgen
+Lal Avgen is an international artist completing her BFA at the School of the Art Institute of Chicago. Having lived in Istanbul, Turkey before coming to Chicago, Avgen is shaped by the experience of living in two different parts of the world. Combining art, technology and performance, her work integrates the moving image with interactive sensors and code based art to explore these differences. Using language and the fallibility of translation, Avgen is interested in reversing the Western media bias by offering a view of that which is not widely known to its audience. Most recently, her performances have been shaped by destruction and acts of terror in Turkey and the lack of sufficient media coverage. Lal is currently a member of the international online contemporary media publication, Public Excess, which she also did the website for.  Avgen’s performances include; Elastic Arts Gallery(2015), Defibrillator Gallery(2016), No Nation Art Gallery(2016), Tom Robinson Gallery(2016), 4E Gallery(2016).  
+
+(link: http://lalavgen.com/  text: Lal Avgen's website popup: yes)
+(link: https://vimeo.com/lalavgen text: Lal Avgen's vimeo popup: yes)
+
+##Mev Luna
+Mev Luna is a Mexican-American interdisciplinary artist pursuing an MFA at the School of the Art Institute of Chicago (2017), where they were awarded a SAIC Shapiro Center for Research and Collaboration Fellowship for the 2015-16 academic year. Luna graduated with High Distinction from California College of the Arts (BFA 2011) with a concentration in Textiles and Media Arts. Charged by the politics of dematerialization within the contemporary technological landscape, Mev Luna elevates the body as central ground for ancestral remembering. Using video installation, lecture performance, and digital media, Luna draws on critical race theory and latinx hybridity to create alternative epistemologies. Their works have exhibited in groups shows at The Margulies Collection Warehouse, the Contemporary Arts Museum Houston, Oliver Arts Center at California College of the Arts and ThreeWalls@Rational Park, Chicago. Luna’s time based works have screened at Artists’ Television Access, San Francisco, MIX NYC Queer Experimental Film Festival and as part of Open Your Golden Gates: Shorts from the Bay in Berlin, Hamburg, and Montréal, Québec. Luna is currently a founding collective member of the international online contemporary media publication, Public Excess. In 2006, Luna was the recipient of the National YoungArts Foundation Level II Award and a nominee for Presidential Scholar in the Arts. 
+
+
+(link: www.mevluna.com text: Mev Luna's website popup: yes)
+
+
+##Zeynab Ghandour
+Zeynab Ghandour is an international artist from Beirut studying Art and Technology at The Art Institute of Chicago (BFA 2018). Ghandour works with 3D software as a post-photographic interface. The archive, or lack of, of their native country has challenged the individual and the collective history of Lebanon; a specific yet global symptom. Her work is focused on creating meta-narratives; the tension between the individual narrative and collective histories, familial relationships and material choices. She is influenced by nose jobs, reward systems, web-romance and contemporary cyborgs.
+(link: https://www.behance.net/zeynabg text: Zeynab Ghandour's website popup: yes)
+
+
+

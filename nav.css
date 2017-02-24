@@ -1,0 +1,41 @@
+<div id="mobileTest"></div>
+<div id="nav" class="navout">
+<div id="mobileNav" class="mobile-navout"><img src="/assets/images/icons_mobile-nav.png" alt=""></div>
+
+<div id="bars" class="screen">
+	<div class="top"></div>
+	<div class="bottom"></div>
+	<div class="left"></div>
+	<div class="right"></div>
+</div>
+
+	<nav id="hjgs" class="navtop nav-item" >
+	<div class="nav-content">
+	<a href="/"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="162px" height="196.5px" viewBox="0 0 162 196.5" enable-background="new 0 0 162 196.5" xml:space="preserve">
+<path d="M138.372,110.161c0-7.76-4.117-14.445-10.012-17.467c2.333-3.287,3.739-7.446,3.739-11.972
+	c0-10.587-7.644-19.201-17.038-19.201h-11.664H87.028V24.783c0-9.225-8.453-16.73-18.843-16.73c-10.39,0-18.842,7.505-18.842,16.73
+	v37.319c-14.64,2.735-25.715,14.946-25.715,29.562v66.637c0,16.622,14.318,30.146,31.918,30.146h34.082
+	c0.438,0,0.853-0.081,1.252-0.2h10.394c9.394,0,17.037-8.615,17.037-19.202c0-3.886-1.037-7.503-2.805-10.527
+	c8.05-1.521,14.213-9.412,14.213-18.911c0-4.164-1.196-8.012-3.198-11.16C133.383,125.967,138.372,118.711,138.372,110.161z
+	 M68.185,17.009c5.451,0,9.884,3.488,9.884,7.774v36.738h-0.275H58.3V24.783C58.3,20.497,62.734,17.009,68.185,17.009z
+	 M121.335,120.405h-8.647H84.073H64.012c-2.474,0-4.478,2.004-4.478,4.479c0,2.474,2.004,4.478,4.478,4.478h20.061h28.614
+	c4.452,0,8.072,4.595,8.072,10.245c0,5.645-3.62,10.236-8.072,10.236h-11.414H75.414H64.012c-2.474,0-4.478,2.006-4.478,4.48
+	c0,2.475,2.004,4.479,4.478,4.479h11.402h25.859c4.454,0,8.078,4.596,8.078,10.243c0,5.648-3.624,10.243-8.078,10.243H64.012
+	c-0.439,0-0.853,0.081-1.254,0.2h-7.211c-12.661,0-22.962-9.503-22.962-21.187V91.664c0-11.683,10.301-21.188,22.962-21.188h22.248
+	h25.604h11.664c4.455,0,8.078,4.595,8.078,10.245s-3.623,10.245-8.078,10.245H84.073H64.012c-2.474,0-4.478,2.004-4.478,4.478
+	s2.004,4.478,4.478,4.478h20.061h30.988h6.273c4.454,0,8.078,4.593,8.078,10.239C129.413,115.81,125.789,120.405,121.335,120.405z"
+	></path>
+</svg></a></div></nav>
+
+	<nav class="nav-item navright" ><div class="nav-content"><a href="/about/"><h2 class="bb">ABOUT</h2></a></div></nav>
+	<nav class="nav-item navleft" ><div class="nav-content"><a href="/tag:all-items/"><h2 class="bb">SHOP</h2></a></div></nav>
+	<nav class="nav-item navbottom" ><div class="nav-content"><a href="http://handjobgallerystore.tumblr.com/" target="_blank"><h2 class="bb">NEWS</h2></a></div></nav>
+	<nav id="cart" class="nav-item fc_minicart">
+		<div class="nav-content">
+			<a href="https://h-j-g-s.foxycart.com/cart?cart=view" style="display:block">
+			<div id="fc_quantity"></div>
+			</a>
+		</div>
+	</nav>
+</div>

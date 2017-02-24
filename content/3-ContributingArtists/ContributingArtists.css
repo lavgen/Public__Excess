@@ -1,0 +1,22 @@
+p{
+    font-family: 'Didot';
+	color: black;
+    padding-left: 10px;
+    padding-right: 15px;
+    margin-right: 8px;
+    text-align: justify;
+    display: block;
+    width: 95%;
+    margin-left: 1%;
+}
+h1{
+    font-family: 'COM4tSansMedium';
+
+	text-align: center;
+}
+
+h3{
+    font-family: 'COM4tSansMedium';
+
+	margin-left: 1%;
+}

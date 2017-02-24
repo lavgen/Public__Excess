@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+	body {
+  		background: red;
+	}
+
+	#main {
+	  position: absolute;
+	  width: 100%;
+	  text-align: center;
+	}
+
+	#abolish, #language {
+	  text-align: center;
+	  font-family: sans;
+	  font-size: 400%;
+	  text-transform: uppercase;
+	  right: 0;
+	}
+
+</style>
+<body>
+
+
+<div id="main">
+
+  	<div id="abolish">
+  		&nbsp;
+  	</div>
+  	<div id="language">
+  		&nbsp;
+  	</div>
+</div>
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<script src="jquery.js"></script>
+<script src="typed.js"></script>
+<script src="https://rawgit.com/mattboldt/typed.js/master/js/typed.js"></script>
+<script>
+	var body_css = [{'background':'red'}, {'background':'black'}];
+	var main_css = [{'color':'black'}, {'color':'red'}];
+
+	function rnd(arr) {
+		return arr[Math.floor(Math.random()*arr.length)];
+	}
+
+	function blinker() {
+		$('body').css(rnd(body_css));
+	  $('#main').css(rnd(main_css));
+	}
+	function type_language(f) {
+		$("#language").typed({strings: ["language"], showCursor: false, typeSpeed: 500,
+	  callback: f});
+	}
+
+	function type_abolish(f) {
+		$("#abolish").typed({strings: ["abolish"], showCursor: false, typeSpeed: 200,
+	  callback: f});
+	}
+
+	function blink_background(f) {
+		var cnt = 0, interval = setInterval(function() {
+	        cnt++;
+	        $('#main').css(main_css[cnt % main_css.length]);
+					$('body').css(body_css[cnt % body_css.length]);
+	        if(cnt >= 4) { clearInterval(interval); f(); }
+	    }, 200);
+	}
+
+	function randomflickr()
+	{
+	setInterval(blinker, 200);
+	}
+
+	function spreadout(f) {
+	var atop = $("#abolish").offset().top;
+	var aleft = $("#abolish").offset().left;
+	$("#abolish").css({top: atop+"px", left: aleft+"px", position: "fixed"}).animate({top:($(window).scrollTop()+$(window).height())+"px"}, 15000);
+
+	var ltop = $("#language").offset().top+$("#abolish").height();
+	var lleft = $("#language").offset().left;
+	$("#language").css({top: ltop+"px", left: lleft+"px", position: "fixed"}).animate({top:-$("#language").height()}, 15000);
+
+	setTimeout(function() {
+	$("#abolish").css({top: atop+"px", left: aleft+"px"});
+	$("#language").css({top: ltop+"px", left: lleft+"px"});
+	$(window).trigger('resize');
+	f();
+	}, 15000);
+	}
+
+	//$("#main").css({"top": Math.max(0, (($(window).height() - $("#main").outerHeight()) / 2) + $(window).scrollTop()) + "px"});
+
+	type_abolish(function(){type_language(function(){
+	blink_background(function(){spreadout(randomflickr)})})});
+</script>
+</body>
+</html>

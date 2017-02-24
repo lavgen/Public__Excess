@@ -1,0 +1,17 @@
+Title: Public Excess
+
+----
+
+Author: Lal Avgen
+
+----
+
+Description: This is an online publication.
+
+----
+
+Keywords: Kirby, CMS, file-based
+
+----
+
+Copyright: Made with ♥ by  Lal Avgen

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<style>
+/*html{
+  overflow: hidden;
+}*/
+@font-face {
+  font-family: 'COM4tSansMedium';
+   src: url(../../../assets/fonts/COM4tSansMedium.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Didot';
+   src: url(../../../assets/fonts/didot.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html { 
+  background:  url(black_water2c.gif); 
+  background-size: cover;
+}
+	#player1{
+		position: relative;
+		left: 34px;
+		top: 163px;
+	}
+	#player2{
+		position: absolute;
+		left: 804.4px;
+		top: 166.4px;
+	}
+
+#splashscreen {
+	
+    position:absolute;
+    z-index: 9999;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    width:150%;
+    height: 500%;
+    background-color:white;
+    opacity: 1;
+    font-size: 27px;
+}
+#splashtext{
+  width: 50%;
+  margin-left: 10%;
+  margin-top: 10%;
+  font-family: 'Didot';
+}
+#circle{
+  max-width: 100%;
+  width: 100%;
+}
+#poem {text-align:center; position:absolute; bottom:20px; color: white;  font-family:'COM4tSansMedium'; font-size:1em; padding:1px 1px; 
+  }
+#poem:hover{
+    background-color: rgba(255,255,255,.5);
+    color: black;
+}
+</style>
+<body>
+	<div id="splashscreen">
+   <div style="width:50%; margin-left:10%; margin-top: 10%;  font-family: 'Didot';">
+		We sat down artist Shala Miller with Janelle Miller, co-curator of DeNue–an exhibition featuring emerging BLACK artists from the School of the Art Institute of Chicago’s community– to discuss her work in the show and the importance of complicating notions of Blackness. 
+    <br><br>
+    Click and drag videos around.
+     <a href="#" class="enter_link" style="font-size: 20px; position: absolute; top: 14%; left:27%; color: black; font-family:'COM4tSansMedium';">CLICK TO ENTER</a>
+    </div>
+   
+
+  </div>
+
+
+<!-- 	shala's video -->
+    <div id="player1" class="drag">
+        <div id="iframeFix" style="display:block; background:transparent; position:absolute; width:50%; height:100%; z-index:9999999;"></div>
+        <iframe class="youtube-player" type="text/html" width="425" height="239" style="z-index:2000!important;" src="https://www.youtube.com/embed/3lcgcVXLETI?autoplay=1&loop=1" frameborder="0" frameborder="0"></iframe>
+    </div>
+<!--     janelle's video -->
+  	<div  id="player2"  class="drag">
+        <div id="iframeFix" style="display:block; background:transparent; position:absolute; width:100%; height:100%; z-index:9999999;"></div>
+        <iframe class="youtube-player" type="text/html" width="425" height="239" style="z-index:2000!important;" src="https://www.youtube.com/embed/BZfSbS0OYUA?autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0&loop=1"  frameborder="0">
+        		
+        </iframe>
+
+   </div>
+   <div id="circle"><a id="poem" href="Shala/index.html"> <i>enter: </i>"Me and the Mango Both Have Flaws/Me and the Mango Get Along/To Seem Sweet Only Without the Skin"
+    </a></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script>
+    //get videos
+var vid = document.getElementById("player1");
+var vid2 = document.getElementById("player2");
+//disable preload so splash page has a time
+function enablePreload() { 
+    vid.preload = "none";
+    vid2.preload = "none";
+} 
+//connect to youtube api
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+//for splash page 
+ $('.enter_link').click(function() { 
+
+        $('#splashscreen').fadeOut(500);       
+ });
+
+function onYouTubeIframeAPIReady() {
+    if (typeof playerInfoList === 'undefined') return;
+    
+    for (var i = 0; i < playerInfoList.length; i++) {
+        var curplayer = createPlayer(playerInfoList[i]);
+        players[i] = curplayer;
+    }
+}
+var players = new Array();
+
+function createPlayer(playerInfo) {
+    return new YT.Player(playerInfo.id, {
+        height: playerInfo.height,
+        width: playerInfo.width,
+        videoId: playerInfo.videoId,
+        // playerVars: {autoplay:1, loop:1},
+
+    });
+}
+$(document).ready(function()
+{  
+   $('.drag').draggable();
+
+});
+
+
+// $(document).ready(function () {
+
+//     $('#stop').click(function () {
+//         //loop players array to stop them all
+//         $(players).each(function (i) {
+//             console.log(this);
+//             this.stopVideo();
+//         });
+//     });
+// })
+
+	</script>
+</body>
+

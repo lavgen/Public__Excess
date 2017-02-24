@@ -1,0 +1,872 @@
+/*
+
+Kirby Starterkit
+
+Author: Bastian Allgeier / Sascha Lack
+URL:    http://getkirby.com
+Email:  support@getkirby.com
+
+*/
+
+
+
+/* Didot
+-------------------------------------------------- */
+@font-face {
+  font-family: 'Didot';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/didot.woff) format('woff');
+}
+@font-face {
+  font-family: 'COM4tSansMedium';
+   src: url(../fonts/COM4tSansMedium.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nunito';
+  font-weight: bold;
+  src: url(../fonts/nunito-bold-webfont.woff) format('woff');
+}
+/* Open Sans
+-------------------------------------------------- */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/opensans-regular-webfont.woff) format('woff');
+}
+/* Lora
+-------------------------------------------------- */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/lora-regular-webfont.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: bold;
+  font-weight: 600;
+  src: url(../fonts/lora-bold-webfont.woff) format('woff');
+}
+/* Alegerya
+-------------------------------------------------- */
+@font-face {
+  font-family: 'Alegreya';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/alegreya-regular-webfont.woff) format('woff');
+}
+@font-face {
+  font-family: 'Alegreya';
+  font-style: bold;
+  font-weight: 600;
+  src: url(../fonts/alegreya-bold-webfont.woff) format('woff');
+}
+/*section{
+  margin-bottom: 5em;
+}*/
+.thumb{
+
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+
+  
+
+}
+/*section on home page for each project*/
+#projectSections{
+  margin-bottom: 30%;
+  margin-top: 1.5em;
+  list-style: none;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  text-align: justify;
+}
+ 
+
+#projectSections:first-child{
+  margin-bottom: 55%;
+  margin-top: 30%;
+}
+#projectselector{
+  list-style: none;
+ /* position: absolute;*/
+  top: 195%;
+  left: 10%;
+}
+#projectselector a{
+   font-family: 'COM4tSansMedium';
+   font-size: 5em;
+   width: 70%;
+}
+.nonitalic{
+   font-family: 'Didot';
+  font-style: italic;
+  word-wrap: break-word;
+  font-weight: initial;
+}
+a.projectlinks{
+ 
+  
+  margin-bottom: 55%;
+  padding-left: 15px;
+  display: inline-block;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 1.4em;
+  box-shadow: 5px 5px 3px #7389c7;
+  margin-left: 15%;
+  
+
+  }
+a.projectlinks:first-child{
+  margin-top: 52%;
+  display: inline-block;
+}
+a.projectlinks:hover{
+  background-color: #7389c7;
+  color: white;
+   box-shadow: 20px 20px 20px 20px white;
+}
+
+.bottomborders{
+  width: 99%;
+  padding-top: 6px;
+  border-bottom-width: 1.5px;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+/*.video{
+  position: relative;
+}*/
+/*.projectSections a{
+  display: none;
+}*/
+#projects div {
+   font-family: 'Didot';
+}
+
+/*.text p {
+  text-align: left;
+  width: 100%;
+}*/
+p{
+
+  text-align: center;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/*iframe{
+    position: relative;
+    margin-left: 50%;
+    margin-right: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    margin-top: 15%;
+    
+}
+*/
+/*.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}*/
+  /**/
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: absolute;
+    height: 0px;
+    width: 100%;
+   /* margin-top: 40%;*/
+    margin-left: 1px;
+    margin-right: 1px;
+    left: 0px;
+   /* overflow: hidden;
+    padding-bottom: 56.25%;
+    position: absolute;
+    height: 0px;
+    width: 100%;
+    left: 0px;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    /* left: 50%; */
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+.video-responsive iframe{
+    /*left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;*/
+    top: 0;
+    height: 60%;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#themestatement{
+    width: 75%;
+    text-align: justify;
+    margin-left: 12.5%;
+    font-family: 'Didot';
+    margin-top: 50px;
+    font-size: 2em;
+}
+#gr{
+height:130vh;
+background: linear-gradient(180deg, rgba(115, 137, 199,0.9), rgba(255, 255, 255,1));
+background-size: 900% 900%;
+-webkit-animation: AnimationName 12s  infinite ALTERNATE ;
+-moz-animation: AnimationName 12s  infinite alternate ;
+animation: AnimationName 12s  infinite alternate ;
+/*-webkit-animation-timing-function: cubic-bezier(0,0,0.25,1);*/
+/*animation-direction: reverse;*/
+overflow-y: hidden;
+}
+
+
+
+/*@-webkit-keyframes AnimationName {
+    0%{background-position:18% 0%}
+    25%{background-position:28% 100%}
+    50%{background-position:58% 0%}
+    100%{background-position:83% 100%}
+
+}*/
+/*@-moz-keyframes AnimationName {
+    0%{background-position:18% 100%}
+    50%{background-position:58% 0%}
+    100%{background-position:83% 100%}
+}*/
+@keyframes AnimationName { 
+    0%{background-position:100% 100%}
+    25%{background-position:80% 80%}
+    50%{background-position:50% 50%}
+     50%{background-position:25% 25%}
+    100%{background-position:0% 0%}
+}
+
+
+/* Reset
+-------------------------------------------------- */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, nav, section, summary {
+  display: inline-block;
+}
+
+/* Pix
+-------------------------------------------------- */
+img {
+    display: block;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -10px;
+
+}
+
+
+/* Links
+-------------------------------------------------- */
+a {
+  color: #000;
+  text-decoration: none;
+  transition: color .3s, background .3s, border .3s;
+}
+a:hover {
+  color: #d2bba6;
+}
+
+
+/* Clearfix
+-------------------------------------------------- */
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Site
+-------------------------------------------------- */
+html {
+   overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+/*  font-family: "Nunito", sans-serif;*/
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+/*//hairline border*/
+.hairline{
+    margin-top: 5px;
+    display: inline-block;
+    zoom: 1;
+    display*: inline;
+    margin: auto auto;
+    height: 20%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 94.5%;
+    height: 85%;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-width: .07cm;
+    border-style: solid;
+    color:#7389c7;
+    background-color: white;
+    -webkit-overflow-scrolling: touch;
+     overflow-x: hidden;
+}
+#title{
+  margin: auto;
+  text-align: center;
+ color: white;
+font-size: 7em;
+position: absolute;
+ top: 75%;
+
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+border-radius: 3px;
+
+left: 50%;
+height: 100%;
+width: 100%;
+}
+.outer{ overflow: hidden;}
+::-webkit-scrollbar {
+      display: none;
+}  this targets the default scrollbar (compulsory) 
+
+body {
+  background-color: black;
+  list-style: none;
+  margin: 0 auto;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  padding: 1.5em;
+  max-width: 50em;
+  background: #fff;
+  color: #222;
+}
+/*selesct first figure in projectSections class*/
+/*div.projectSections figure:first-of-type{
+  position: absolute;
+  height: 700px;
+}*/
+
+/* Header
+-------------------------------------------------- */
+.header {
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 1.5em;
+  width: 125%;
+  position: relative;
+
+  }
+.logo {
+
+  display: none;
+  margin-bottom: 1.5em;
+}
+.themecontainer:hover{
+  display: block;
+  background-color: black;
+}
+
+/*JUST BLOCKED IT NOV 7.theme {
+  position: absolute;
+  max-width: 90%;
+  max-height: 80%;
+  bottom: -47px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+  overflow: hidden;
+ 
+}*/
+.theme {
+    position: absolute;
+    max-width: 110%;
+    max-height: 206%;
+    bottom: -94px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    overflow: hidden;
+    top: 66%;
+}
+.theme:empty
+{
+  
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Safari 4.0 - 8.0 */
+/*@-webkit-keyframes example {
+    0%   { left:0px; bottom: -47px;}
+    100% { left:1400px; bottom: -47px; }
+}
+
+ Standard syntax 
+@keyframes example {
+    0%   { left:0px; bottom: -47px;}
+    100% { left:1400px; bottom: -47px; }
+}*/
+img.ri
+{
+  position: absolute;
+  max-width: 80%;
+  top: 5%;
+  left: 10%;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+}
+
+img.ri:empty
+{
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation: portrait) {
+  img.ri {
+      max-width: 80%;
+  }
+}
+@media screen and (orientation: landscape) {
+  img.ri { max-height: 80%; }
+}
+/* Navigation
+-------------------------------------------------- */
+/*styling of 4 side menu bar*/
+.teaser li:first-child{
+  display: inline-block;
+  position: relative;
+  top: 0em;
+  float: left;
+}
+.teaser li:nth-child(2){
+
+  display: inline-block;
+  position: relative;
+  top: 0em;
+  float: right;
+}
+
+.teaser li:nth-child(3){
+
+  display: inline-block;
+  position: relative;
+  bottom: -25em;
+  right: 15.5em;
+}
+.menu.cf.a{
+  z-index: 30000;
+}
+a.Projects{
+  z-index: 99999;
+  background-color: white;
+  display: inline-block;
+  top:0em;
+  width: 160px;
+  height: 30px;
+  left: 50%;
+  margin-left: -90px; /* Negative half of width. */
+}
+a.about {
+    background-color: white;
+    top: 50%;
+    margin-top: 22px;
+    right: -0.7em;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+a.contact{
+    background-color: white;
+    bottom: 0em;
+    z-index: 999;
+    left: 32em;
+    width: 103px;
+    height: 40px;
+    left: 50%;
+    margin-left: -50.5px; /* Negative half of width. */
+}
+a.ContributingArtists{
+    background-color: white;
+    top: 50%;
+    left: -3.5em;
+    margin-top: 22px;
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Safari */
+    transform: rotate(-90deg);
+}
+
+.menu a {
+  position: fixed;
+   font-family: 'COM4tSansMedium';
+  font-weight: 300;
+  display: inline;
+  color: #222;
+}
+.menu a:hover {
+  color: #eed9c7;
+  text-decoration: none;
+}
+.menu .active {
+  color: red;
+}
+.menu li {
+  list-style: none;
+}
+.menu > li {
+  position: relative;
+}
+.menu > li > a {
+  padding: .35em 0;
+  border-top: 1px solid #ddd;
+  font-weight: 300;
+}
+
+.submenu {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  left: 1em;
+}
+.submenu:before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: -.5em;
+  left: 0;
+  border-top: .5em solid transparent;
+  border-bottom: .5em solid transparent;
+  border-left: .5em solid #222;
+}
+.submenu li {
+  border-bottom: 1px solid #444;
+}
+.submenu a {
+  padding: .5em 1.5em;
+  font-size: .9em;
+  font-weight: 300;
+  color: #fff;
+  background: #222;
+  white-space: nowrap;
+}
+.submenu a:hover {
+  background: #333;
+  color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    padding: 3em;
+  }
+  .logo {
+    float: left;
+  }
+  .menu {
+    float: right;
+    margin-right: -1em;
+  }
+  .menu > li {
+    float: left;
+  }
+  .menu > li > a {
+    padding: .35em 1em;
+    border: 0;
+  }
+  .menu > li:hover .submenu {
+    display: block;
+  }
+  /*a.ContributingArtists{
+    margin-left: 10px;
+  }*/
+
+}
+@media (max-width: 1200px){
+ 
+
+}
+@media (max-width: 667px){
+  a.ContributingArtists{
+    margin-left: 17px;
+    padding-right: 2px;
+    display: block;
+    }
+   a.about{
+    margin-right: 14px;
+    padding-left: 2px;
+    display: block;
+   }
+  .hairline{
+    
+    width: 88%;
+    margin-left: 2px;
+    margin-right: 10px;
+
+  }
+   #projectselector a{
+    
+    font-size: 1.5em;
+   }
+   a.projectlinks:hover {
+    background-color: #7389c7;
+    color: white;
+    box-shadow: 10px 10px 10px 10px white;
+}
+   #title{
+    left: 50%;
+    font-size: 2em;
+    margin-left: 0px;
+    color: black;
+    top: 70%;
+    margin: 0 0;
+    position: absolute;
+   }
+   .menu a {
+    font-size: 1em;
+    background-color: transparent;
+   }
+
+}
+/*for iphone 6*/
+@media (max-width:790px){
+    html{
+    overflow-x: hidden;
+    max-width: 80%;
+  }
+  .hairline{
+    overflow-y: scroll;
+   /* left: 6%;
+    top: 6%;*/
+  }
+}
+/*THIS ONE IS FOR IPHONE 5*/
+@media (max-width:490px){
+  html{
+    overflow-x: hidden;
+  }
+  .hairline{
+    overflow-x: hidden;
+    overflow-y: scroll;
+ /*   left: 6%;
+    top: 6%;*/
+  }
+  #themestatement{
+    width: 75%;
+    text-align: justify;
+    margin-left: 12.5%;
+    font-family: 'Didot';
+    margin-top: 50px;
+    margin-bottom: 10%;
+    font-size: 1em;
+}
+
+}
+
+/* Headings
+-------------------------------------------------- */
+h1 {
+  
+  font-family: 'COM4tSansMedium';
+  padding-top: 3%;
+  list-style: none;
+  font-size: 2em;
+  line-height: 1.25em;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+h2 {
+  
+  font-size: 2em;
+  line-height: 1.25em;
+  font-weight: 300;
+  margin-bottom: .5em;
+  color: black;
+  text-align: left;
+}
+h3 {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+h4 {
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin-bottom: .5em;
+  color: red;
+}
+h1 a, h2 a, h3 a, h4 a {
+  color: inherit;
+  border: 0 !important;
+
+}
+
+
+
+/* Main
+-------------------------------------------------- */
+.main {
+  padding-bottom: 43.5em;
+  border-bottom: 0.5px groove black;
+}
+.main hr {
+  margin: 3em 0;
+  height: 0px;
+  background: #ddd;
+}
+.main p,
+.main figure,
+.main ul,
+.main ol {
+  margin-bottom: 1.5em;
+ 
+}
+.main a {
+  border-bottom: 2px solid #ddd;
+}
+.main a:hover {
+  border-color: #222;
+}
+
+/* Text blocks */
+.text ul,
+.text ol {
+  margin-left: ;
+}
+
+/* Project meta
+-------------------------------------------------- */
+.meta {
+  margin-bottom: 1.5em;
+}
+.meta li {
+  float: left;
+  list-style: none;
+  margin-right: 2em;
+  color: red;
+}
+.meta li b {
+  font-weight: 400;
+  color: #000;
+  padding-right: .25em;
+}
+
+
+/* Project teaser
+-------------------------------------------------- */
+.teaser {
+  list-style: none;
+}
+.teaser li {
+  margin-bottom: 1.5em;
+  list-style: none;
+}
+@media screen and (min-width: 50em) {
+  .teaser li {
+    float: right;
+    width: 30%;
+    margin-left: 5%;
+  }
+  .teaser li:first-child {
+    margin-left: 0;
+  }
+
+}
+
+
+/* Next/Prev nav
+-------------------------------------------------- */
+.nextprev {
+  padding: 1em 0;
+}
+.nextprev a {
+  border: 0;
+}
+.nextprev .prev {
+  float: left;
+}
+.nextprev .next {
+  float: right;
+}
+
+
+/* Footer
+-------------------------------------------------- */
+.footer {
+  padding: 1em 0 6em;
+  font-size: .8em;
+  border-top: 0.8px solid black;
+  width: 80%;
+  margin: auto auto;
+  display: block;
+}
+.copyright p{
+  float: left;
+  width: 18%;
+  padding-left: .25em;
+  font-size: .8em;
+  display: inline;
+}
+.colophon {
+  float: right;
+  display: block;
+}
+.colophon a b {
+  color: red;
+  padding-left: .25em;
+}
